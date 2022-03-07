@@ -1,0 +1,1214 @@
+# baseURI: http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick
+# imports: https://brickschema.org/schema/1.2/Brick
+
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick>
+  a owl:Ontology ;
+  owl:imports <https://brickschema.org/schema/1.2/Brick> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC F3" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F3> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.104> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC F3 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC F3 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC F3 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC F3 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F3_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC F3 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC F4" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F4> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.109> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC F4 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC F4 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC F4 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC F4 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F4_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC F4 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC F5" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F5> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.118> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC F5 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC F5 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC F5 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC F5 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F5_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC F5 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC F6" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F6> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.123> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC F6 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC F6 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC F6 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC F6 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_F6_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC F6 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC G3" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G3> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.104> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC G3 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC G3 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC G3 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC G3 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G3_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC G3 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC G4" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G4> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.111> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC G4 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC G4 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC G4 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC G4 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G4_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC G4 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC G5" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G5> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.119> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC G5 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC G5 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC G5 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC G5 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G5_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC G5 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "AC G6" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G6> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.124> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AC G6 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AC G6 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AC G6 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AC G6 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AC_G6_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AC G6 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1>
+  a brick:Air_Handler_Unit ;
+  rdfs:label "AHU B1" ;
+  brick:feedsAir <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B1> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Building307> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_OutsideDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AHU B1 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AHU B1 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_Filter>
+  a brick:Filter ;
+  rdfs:label "AHU B1 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AHU B1 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AHU B1 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_OutsideDamper>
+  a brick:Outside_Damper ;
+  rdfs:label "AHU B1 Outside damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "AHU B1 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AHU B1 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1>
+  a brick:Air_Handler_Unit ;
+  rdfs:label "AHU F1" ;
+  brick:feedsAir <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F1> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Building307> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_OutsideDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AHU F1 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AHU F1 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_Filter>
+  a brick:Filter ;
+  rdfs:label "AHU F1 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AHU F1 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AHU F1 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_OutsideDamper>
+  a brick:Outside_Damper ;
+  rdfs:label "AHU F1 Outside damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "AHU F1 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F1_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AHU F1 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2>
+  a brick:Air_Handler_Unit ;
+  rdfs:label "AHU F2" ;
+  brick:feedsAir <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F2> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Building307> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_B1_SupplyFan> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_OutsideDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_ReturnDamper> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AHU F2 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AHU F2 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_Filter>
+  a brick:Filter ;
+  rdfs:label "AHU F2 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AHU F2 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AHU F2 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_OutsideDamper>
+  a brick:Outside_Damper ;
+  rdfs:label "AHU F2 Outside damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "AHU F2 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_F2_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AHU F2 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1>
+  a brick:Air_Handler_Unit ;
+  rdfs:label "AHU G1" ;
+  brick:feedsAir <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G1> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Building307> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_OutsideDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AHU G1 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AHU G1 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_Filter>
+  a brick:Filter ;
+  rdfs:label "AHU G1 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AHU G1 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AHU G1 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_OutsideDamper>
+  a brick:Outside_Damper ;
+  rdfs:label "AHU G1 Outside damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "AHU G1 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G1_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AHU G1 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2>
+  a brick:Air_Handler_Unit ;
+  rdfs:label "AHU G2" ;
+  brick:feedsAir <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G2> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Building307> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_OutsideDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "AHU G2 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "AHU G2 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_Filter>
+  a brick:Filter ;
+  rdfs:label "AHU G2 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "AHU G2 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "AHU G2 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_OutsideDamper>
+  a brick:Outside_Damper ;
+  rdfs:label "AHU G2 Outside damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "AHU G2 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#AHU_G2_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "AHU G2 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B1>
+  a brick:HVAC_Zone ;
+  rdfs:label "B1" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.100> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.101> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.102> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.103> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.104> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.106> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.109> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.110> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.111> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.112> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.113> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.114> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.115> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B2>
+  a brick:HVAC_Zone ;
+  rdfs:label "B2" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.107> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B3>
+  a brick:HVAC_Zone ;
+  rdfs:label "B3" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.105> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B4>
+  a brick:HVAC_Zone ;
+  rdfs:label "B4" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.108> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement>
+  a brick:Basement ;
+  rdfs:label "Basement" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.100>
+  a brick:Room ;
+  rdfs:label "Basement B.100" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.101>
+  a brick:Copy_Room ;
+  rdfs:label "Basement B.101" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.102>
+  a brick:Breakroom ;
+  rdfs:label "Basement B.102" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.103>
+  a brick:Room ;
+  rdfs:label "Basement B.103" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.104>
+  a brick:Hallway ;
+  rdfs:label "Basement B.104" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.105>
+  a brick:Conference_Room ;
+  rdfs:label "Basement B.105" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.106>
+  a brick:Office_Kitchen ;
+  rdfs:label "Basement B.106" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.107>
+  a brick:Conference_Room ;
+  rdfs:label "Basement B.107" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.108>
+  a brick:Conference_Room ;
+  rdfs:label "Basement B.108" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.109>
+  a brick:Restroom ;
+  rdfs:label "Basement B.109" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.110>
+  a brick:Restroom ;
+  rdfs:label "Basement B.110" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.111>
+  a brick:Restroom ;
+  rdfs:label "Basement B.111" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.112>
+  a brick:Restroom ;
+  rdfs:label "Basement B.112" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.113>
+  a brick:Hallway ;
+  rdfs:label "Basement B.113" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.114>
+  a brick:Storage_Room ;
+  rdfs:label "Basement B.114" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.115>
+  a brick:Storage_Room ;
+  rdfs:label "Basement B.115" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.116>
+  a brick:Service_Room ;
+  rdfs:label "Basement B.116" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1>
+  a brick:Boiler ;
+  rdfs:label "Boiler1" ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.116> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Building307>
+  a brick:Building ;
+  rdfs:label "Building307" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1>
+  a brick:Chiller ;
+  rdfs:label "Chiller1" ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.116> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F1>
+  a brick:HVAC_Zone ;
+  rdfs:label "F1" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.100> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.101> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.102> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.103> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.111> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.112> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.113> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.114> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.115> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.116> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.117> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.117a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F2>
+  a brick:HVAC_Zone ;
+  rdfs:label "F2" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.105> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.106> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.107> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.108> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.119> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.120> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.121> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.122> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F3>
+  a brick:HVAC_Zone ;
+  rdfs:label "F3" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F4>
+  a brick:HVAC_Zone ;
+  rdfs:label "F4" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.109> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F5>
+  a brick:HVAC_Zone ;
+  rdfs:label "F5" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.118> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F6>
+  a brick:HVAC_Zone ;
+  rdfs:label "F6" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.123> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F7>
+  a brick:HVAC_Zone ;
+  rdfs:label "F7" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.110> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "FCU B2" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B2> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.107> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "FCU B2 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "FCU B2 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_Filter>
+  a brick:Filter ;
+  rdfs:label "FCU B2 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "FCU B2 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "FCU B2 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "FCU B2 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B2_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "FCU B2 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "FCU B3" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B3> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.105> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "FCU B3 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "FCU B3 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_Filter>
+  a brick:Filter ;
+  rdfs:label "FCU B3 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "FCU B3 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "FCU B3 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "FCU B3 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B3_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "FCU B3 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "FCU B4" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#B4> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Basement_B.108> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "FCU B4 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "FCU B4 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_Filter>
+  a brick:Filter ;
+  rdfs:label "FCU B4 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "FCU B4 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "FCU B4 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "FCU B4 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_B4_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "FCU B4 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "FCU F7" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#F7> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.110> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "FCU F7 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "FCU F7 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_Filter>
+  a brick:Filter ;
+  rdfs:label "FCU F7 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "FCU F7 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "FCU F7 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "FCU F7 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_F7_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "FCU F7 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7>
+  a brick:Fan_Coil_Unit ;
+  rdfs:label "FCU G7" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G7> ;
+  brick:hasLocation <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.112> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_CHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_ClgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_Filter> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_HHWCoil> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_HtgVlv> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_ReturnDamper> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_SupplyFan> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_CHWCoil>
+  a brick:Cooling_Coil ;
+  rdfs:label "FCU G7 CHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Chiller1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_ClgVlv>
+  a brick:Cooling_Valve ;
+  rdfs:label "FCU G7 Clg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_CHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_Filter>
+  a brick:Filter ;
+  rdfs:label "FCU G7 Filter" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_HHWCoil>
+  a brick:Heating_Coil ;
+  rdfs:label "FCU G7 HHWCoil" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Boiler1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_HtgVlv>
+  a brick:Heating_Valve ;
+  rdfs:label "FCU G7 Htg vlv" ;
+  brick:feeds <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_HHWCoil> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_ReturnDamper>
+  a brick:Return_Damper ;
+  rdfs:label "FCU G7 Return damper" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#FCU_G7_SupplyFan>
+  a brick:Supply_Fan ;
+  rdfs:label "FCU G7 Supply fan" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G1>
+  a brick:HVAC_Zone ;
+  rdfs:label "G1" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.100> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.101> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.102> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.103> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.113> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.114> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.115> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.116> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.117> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.118> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.118a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G2>
+  a brick:HVAC_Zone ;
+  rdfs:label "G2" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.105> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.106> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.107> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.108> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.109> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.110> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.120> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.121> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.122> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.123> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G3>
+  a brick:HVAC_Zone ;
+  rdfs:label "G3" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G4>
+  a brick:HVAC_Zone ;
+  rdfs:label "G4" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.111> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G5>
+  a brick:HVAC_Zone ;
+  rdfs:label "G5" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.119> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G6>
+  a brick:HVAC_Zone ;
+  rdfs:label "G6" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.124> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#G7>
+  a brick:HVAC_Zone ;
+  rdfs:label "G7" ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.112> ;
+  brick:hasPart <http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.112a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground>
+  a brick:Floor ;
+  rdfs:label "Ground" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.100>
+  a brick:Hallway ;
+  rdfs:label "Ground G.100" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.101>
+  a brick:Lobby ;
+  rdfs:label "Ground G.101" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.102>
+  a brick:Hallway ;
+  rdfs:label "Ground G.102" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.103>
+  a brick:Hallway ;
+  rdfs:label "Ground G.103" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.104>
+  a brick:Conference_Room ;
+  rdfs:label "Ground G.104" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.105>
+  a brick:Enclosed_Office ;
+  rdfs:label "Ground G.105" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.106>
+  a brick:Enclosed_Office ;
+  rdfs:label "Ground G.106" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.107>
+  a brick:Enclosed_Office ;
+  rdfs:label "Ground G.107" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.108>
+  a brick:Open_Office ;
+  rdfs:label "Ground G.108" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.109>
+  a brick:Open_Office ;
+  rdfs:label "Ground G.109" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.110>
+  a brick:Enclosed_Office ;
+  rdfs:label "Ground G.110" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.111>
+  a brick:Conference_Room ;
+  rdfs:label "Ground G.111" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.112>
+  a brick:Open_Office ;
+  rdfs:label "Ground G.112" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.112a>
+  a brick:Office_Kitchen ;
+  rdfs:label "Ground G.112a" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.113>
+  a brick:Library ;
+  rdfs:label "Ground G.113" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.114>
+  a brick:Restroom ;
+  rdfs:label "Ground G.114" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.115>
+  a brick:Restroom ;
+  rdfs:label "Ground G.115" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.116>
+  a brick:Restroom ;
+  rdfs:label "Ground G.116" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.117>
+  a brick:Janitor_Room ;
+  rdfs:label "Ground G.117" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.118>
+  a brick:Hallway ;
+  rdfs:label "Ground G.118" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.118a>
+  a brick:Server_Room ;
+  rdfs:label "Ground G.118a" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.119>
+  a brick:Conference_Room ;
+  rdfs:label "Ground G.119" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.120>
+  a brick:Enclosed_Office ;
+  rdfs:label "Ground G.120" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.121>
+  a brick:Open_Office ;
+  rdfs:label "Ground G.121" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.122>
+  a brick:Open_Office ;
+  rdfs:label "Ground G.122" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.123>
+  a brick:Enclosed_Office ;
+  rdfs:label "Ground G.123" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Ground_G.124>
+  a brick:Conference_Room ;
+  rdfs:label "Ground G.124" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1>
+  a brick:Floor ;
+  rdfs:label "Level1" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.100>
+  a brick:Hallway ;
+  rdfs:label "Level1 1.100" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.101>
+  a brick:Lobby ;
+  rdfs:label "Level1 1.101" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.102>
+  a brick:Hallway ;
+  rdfs:label "Level1 1.102" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.103>
+  a brick:Hallway ;
+  rdfs:label "Level1 1.103" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.104>
+  a brick:Conference_Room ;
+  rdfs:label "Level1 1.104" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.105>
+  a brick:Enclosed_Office ;
+  rdfs:label "Level1 1.105" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.106>
+  a brick:Open_Office ;
+  rdfs:label "Level1 1.106" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.107>
+  a brick:Open_Office ;
+  rdfs:label "Level1 1.107" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.108>
+  a brick:Enclosed_Office ;
+  rdfs:label "Level1 1.108" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.109>
+  a brick:Conference_Room ;
+  rdfs:label "Level1 1.109" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.110>
+  a brick:Shared_Office ;
+  rdfs:label "Level1 1.110" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.111>
+  a brick:Office_Kitchen ;
+  rdfs:label "Level1 1.111" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.112>
+  a brick:Office ;
+  rdfs:label "Level1 1.112" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.113>
+  a brick:Hallway ;
+  rdfs:label "Level1 1.113" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.114>
+  a brick:Restroom ;
+  rdfs:label "Level1 1.114" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.115>
+  a brick:Restroom ;
+  rdfs:label "Level1 1.115" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.116>
+  a brick:Restroom ;
+  rdfs:label "Level1 1.116" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.117>
+  a brick:Hallway ;
+  rdfs:label "Level1 1.117" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.117a>
+  a brick:Server_Room ;
+  rdfs:label "Level1 1.117a" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.118>
+  a brick:Conference_Room ;
+  rdfs:label "Level1 1.118" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.119>
+  a brick:Enclosed_Office ;
+  rdfs:label "Level1 1.119" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.120>
+  a brick:Open_Office ;
+  rdfs:label "Level1 1.120" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.121>
+  a brick:Open_Office ;
+  rdfs:label "Level1 1.121" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.122>
+  a brick:Enclosed_Office ;
+  rdfs:label "Level1 1.122" ;
+.
+<http://design-pattern-instance-only.qzc438.com/Brick_1.2.1/C_B307_Brick#Level1_1.123>
+  a brick:Conference_Room ;
+  rdfs:label "Level1 1.123" ;
+.

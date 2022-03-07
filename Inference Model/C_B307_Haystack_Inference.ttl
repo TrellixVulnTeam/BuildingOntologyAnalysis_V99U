@@ -1,0 +1,4634 @@
+# baseURI: http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack
+# imports: file:///E:/TBCMEResearchWorkspace/design-pattern.qzc438.com/ProjectHaystack/defs.ttl
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ph: <https://project-haystack.org/def/ph/3.9.11#> .
+@prefix phIoT: <https://project-haystack.org/def/phIoT/3.9.11#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack>
+  a owl:Ontology ;
+  spin:imports <http://topbraid.org/spin/owlrl-all> ;
+  owl:imports <file:///E:/TBCMEResearchWorkspace/design-pattern.qzc438.com/ProjectHaystack/defs.ttl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC F3" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F3> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F3 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F3 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F3 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F3 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC F3 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC F4" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F4> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.109> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F4 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F4 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F4 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F4 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC F4 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC F5" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F5> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.118> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F5 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F5 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F5 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F5 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC F5 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC F6" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F6> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.123> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F6 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F6 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC F6 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC F6 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC F6 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC G3" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G3> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G3 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G3 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G3 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G3 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC G3 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC G4" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G4> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.111> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G4 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G4 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G4 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G4 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC G4 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC G5" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G5> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.119> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G5 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G5 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G5 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G5 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC G5 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AC G6" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G6> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.119> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G6 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G6 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AC G6 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AC G6 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AC G6 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1>
+  a phIoT:ahu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AHU B1" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU B1 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU B1 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "AHU B1 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU B1 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU B1 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_OutsideDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU B1 Outside damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU B1 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AHU B1 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1>
+  a phIoT:ahu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AHU F1" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU F1 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU F1 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "AHU F1 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU F1 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU F1 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_OutsideDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU F1 Outside damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU F1 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AHU F1 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2>
+  a phIoT:ahu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AHU F2" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU F2 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU F2 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "AHU F2 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU F2 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU F2 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_OutsideDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU F2 Outside damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU F2 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AHU F2 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1>
+  a phIoT:ahu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AHU G1" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU G1 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU G1 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "AHU G1 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU G1 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU G1 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_OutsideDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU G1 Outside damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU G1 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AHU G1 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2>
+  a phIoT:ahu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "AHU G2" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU G2 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU G2 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "AHU G2 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "AHU G2 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "AHU G2 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_OutsideDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU G2 Outside damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "AHU G2 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "AHU G2 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "B1" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B2>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "B2" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B3>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "B3" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B4>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "B4" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:subterranean-floor ;
+  rdfs:label "Basement" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.100>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.100" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.101>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.101" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.102>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.102" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.103>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.103" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.104>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.100" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.105>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.105" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B3> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.106>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.106" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.107>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.107" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.108>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.108" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B4> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.109>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.109" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.110>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.110" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.111>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.111" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.112>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.112" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.113>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.113" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.114>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.114" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.115>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.115" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.116>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Basement B.116" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Boiler1>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:boiler ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "Boiler1" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HHWCoil> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307>
+  a phIoT:site ;
+  rdfs:label "Building307" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Chiller1>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:chiller ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "Chiller1" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_CHWCoil> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "F1" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "F2" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F3>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "F3" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F4>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "F4" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F5>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "F5" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F6>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "F6" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F7>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "F7" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "FCU B2" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.107> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU B2 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU B2 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "FCU B2 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU B2 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU B2 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "FCU B2 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "FCU B2 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "FCU B3" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B3> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.105> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU B3 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU B3 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "FCU B3 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU B3 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU B3 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "FCU B3 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "FCU B3 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "FCU B4" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B4> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.108> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU B4 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU B4 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "FCU B4 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU B4 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU B4 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "FCU B4 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "FCU B4 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "FCU F7" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F7> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.110> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU F7 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU F7 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "FCU F7 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU F7 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU F7 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "FCU F7 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "FCU F7 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7>
+  a phIoT:fcu ;
+  a phIoT:point ;
+  a phIoT:space ;
+  rdfs:label "FCU G7" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_CHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:coolingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU G7 CHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_ClgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_ClgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU G7 Clg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_Filter>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:filter ;
+  a phIoT:point ;
+  rdfs:label "FCU G7 Filter" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_HHWCoil>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:heatingCoil ;
+  a phIoT:point ;
+  rdfs:label "FCU G7 HHWCoil" ;
+  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_HtgVlv> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_HtgVlv>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:valve ;
+  rdfs:label "FCU G7 Htg vlv" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_ReturnDamper>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:damper ;
+  a phIoT:equip ;
+  a phIoT:point ;
+  rdfs:label "FCU G7 Return damper" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_SupplyFan>
+  a <https://project-haystack.org/def/phIct/3.9.11#controller> ;
+  a phIoT:equip ;
+  a phIoT:fan ;
+  a phIoT:point ;
+  rdfs:label "FCU G7 Supply fan" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "G1" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "G2" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G3>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "G3" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G4>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "G4" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G5>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "G5" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G6>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "G6" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7>
+  a phIoT:equip ;
+  a phIoT:hvac-zone-space ;
+  a phIoT:point ;
+  rdfs:label "G7" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground>
+  a phIoT:equip ;
+  a phIoT:ground-floor ;
+  a phIoT:point ;
+  rdfs:label "Ground" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.100>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.100" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.101>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.101" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.102>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.102" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.103>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.103" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.104>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.104" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G3> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.105>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.105" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.106>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.106" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.107>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.107" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.108>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.108" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.109>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.109" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.110>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.110" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.111>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.111" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G4> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.112" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112a>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.112a" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.113>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.113" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.114>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.114" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.115>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.115" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.116>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.116" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.117>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.117" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.118>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.118" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.118a>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.118" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.119>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.119" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G5> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.120>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.120" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.121>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.121" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.122>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.122" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.123>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.123" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.124>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Ground G.124" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G6> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:roof-floor ;
+  rdfs:label "Level1" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.100>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.100" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.101>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.101" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.102>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.102" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.103>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.103" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.104>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.104" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F3> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.105>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.105" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.106>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.106" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.107>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.107" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.108>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.108" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.109>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.109" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F4> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.110>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.110" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F7> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.111>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.111" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.112>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.112" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.113>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.113" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.114>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.114" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.115>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.115" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.116>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.116" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.117>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.117" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F7> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.117a>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.117a" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.118>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.118" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F5> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.119>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.119" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.120>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.120" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.121>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.121" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.122>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.122" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.123>
+  a phIoT:equip ;
+  a phIoT:point ;
+  a phIoT:room ;
+  rdfs:label "Level1 1.123" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F6> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://www.w3.org/2000/01/rdf-schema-more>
+  a rdfs:Resource ;
+.
+xsd:fractionDigits
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+.
+xsd:length
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+.
+xsd:maxExclusive
+  rdfs:range rdfs:Resource ;
+.
+xsd:maxInclusive
+  rdfs:range rdfs:Resource ;
+.
+xsd:maxLength
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+.
+xsd:minExclusive
+  rdfs:range rdfs:Resource ;
+.
+xsd:minInclusive
+  rdfs:range rdfs:Resource ;
+.
+xsd:minLength
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+.
+xsd:pattern
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+.
+xsd:totalDigits
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+.
+<http://www.w3.org/2002/07/owl>
+  rdfs:seeAlso <http://www.w3.org/TR/owl2-mapping-to-rdf/> ;
+  rdfs:seeAlso <http://www.w3.org/TR/owl2-rdf-based-semantics/> ;
+  rdfs:seeAlso <http://www.w3.org/TR/owl2-syntax/> ;
+.
+<http://www.w3.org/TR/owl2-mapping-to-rdf/>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/owl2-rdf-based-semantics/>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/owl2-rdf-based-semantics/#table-axiomatic-classes>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/owl2-rdf-based-semantics/#table-axiomatic-properties>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/owl2-syntax/>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-fractionDigits>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-length>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-maxExclusive>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-maxInclusive>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-maxLength>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-minExclusive>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-minInclusive>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-minLength>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-pattern>
+  a rdfs:Resource ;
+.
+<http://www.w3.org/TR/xmlschema-2/#rf-totalDigits>
+  a rdfs:Resource ;
+.
+ph:accumulate
+  a ph:def ;
+.
+ph:association
+  a ph:def ;
+  a ph:list ;
+.
+ph:baseUri
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:bool
+  a rdfs:Class ;
+  a ph:def ;
+.
+ph:children
+  a ph:def ;
+.
+ph:childrenFlatten
+  a ph:def ;
+.
+ph:choice
+  a rdfs:Resource ;
+  a ph:def ;
+  a ph:list ;
+.
+ph:computed
+  a ph:def ;
+.
+ph:containedBy
+  a ph:def ;
+  a ph:symbol ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:contains
+  a ph:def ;
+  a ph:symbol ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:coord
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+.
+ph:date
+  a rdfs:Class ;
+  a ph:def ;
+.
+ph:dateTime
+  a rdfs:Class ;
+  a ph:def ;
+.
+ph:def
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+ph:defx
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:depends
+  a ph:def ;
+.
+ph:deprecated
+  a ph:def ;
+.
+ph:dict
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+ph:dis
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:doc
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:docAssociations
+  a ph:def ;
+.
+ph:docTaxonomy
+  a ph:def ;
+.
+ph:duration
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+ph:entity
+  a ph:def ;
+  a ph:list ;
+.
+ph:enum
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:feature
+  a rdfs:Resource ;
+  a ph:list ;
+.
+ph:fileExt
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:filetype
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+ph:filterStr
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoAddr
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoCity
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoCoord
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoCountry
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoCounty
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoElevation
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+ph:geoPlace
+  a ph:def ;
+  a ph:list ;
+.
+ph:geoPostalCode
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoState
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:geoStreet
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:grid
+  a rdfs:Class ;
+  a ph:def ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+ph:hasTag
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+.
+ph:id
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+ph:input
+  a ph:def ;
+  a ph:list ;
+.
+ph:inputs
+  a ph:def ;
+  a ph:symbol ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:int
+  a ph:def ;
+  a ph:list ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+ph:is
+  a ph:def ;
+.
+ph:kind
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:lib
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+<https://project-haystack.org/def/ph/3.9.11#lib:ph>
+  a rdfs:Resource ;
+  a ph:def ;
+  a ph:lib ;
+  a ph:list ;
+.
+ph:list
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+ph:mandatory
+  a ph:def ;
+.
+ph:marker
+  a ph:list ;
+  rdfs:subClassOf owl:Thing ;
+.
+ph:max
+  a ph:def ;
+.
+ph:maxVal
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+ph:mime
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:min
+  a ph:def ;
+.
+ph:minVal
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+ph:na
+  a rdfs:Class ;
+  a ph:def ;
+.
+ph:noSideEffects
+  a ph:def ;
+.
+ph:nodoc
+  a ph:def ;
+.
+ph:nosrc
+  a ph:def ;
+.
+ph:notInherited
+  a ph:def ;
+.
+ph:number
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+.
+ph:of
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:op
+  a rdfs:Resource ;
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:about>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:defs>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:filetypes>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:libs>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:nav>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:ops>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:read>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:watchPoll>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:watchSub>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/ph/3.9.11#op:watchUnsub>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+ph:openEnum
+  a ph:def ;
+.
+ph:output
+  a ph:def ;
+  a ph:list ;
+.
+ph:outputs
+  a ph:def ;
+  a ph:symbol ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:reciprocalOf
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:ref
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+ph:relationship
+  a ph:def ;
+  a ph:list ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:remove
+  a rdfs:Class ;
+  a ph:def ;
+.
+ph:scalar
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+ph:span
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:str
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+.
+ph:symbol
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+ph:tagOn
+  a ph:def ;
+  a ph:symbol ;
+.
+ph:tags
+  a ph:def ;
+  a ph:symbol ;
+.
+ph:time
+  a rdfs:Class ;
+  a ph:def ;
+.
+ph:transient
+  a ph:def ;
+.
+ph:transitive
+  a ph:def ;
+.
+ph:tz
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:geoPlace ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:unit
+  a ph:def ;
+  a ph:symbol ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:uri
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+.
+ph:val
+  a rdfs:Resource ;
+  a ph:list ;
+.
+ph:version
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+ph:wikipedia
+  a ph:def ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:anyURI ;
+.
+ph:xstr
+  a rdfs:Class ;
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#bacnet>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#bluetooth>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#coap>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#computer>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#controller>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#controls-panel>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#dali>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#dataCenter>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#device>
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#deviceRef>
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:entity ;
+  rdfs:range ph:marker ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#ftp>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#haystack>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#http>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#imap>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#knx>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#laptop>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#lib:phIct>
+  a rdfs:Resource ;
+  a ph:def ;
+  a ph:lib ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#mobile>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#mobile-phone>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#modbus>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#mqtt>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#network>
+  a ph:def ;
+  a ph:symbol ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#networkRef>
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:entity ;
+  rdfs:range ph:marker ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#networking>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#networking-device>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#networking-router>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#networking-switch>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#obix>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#phone>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#pop3>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#protocol>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#rack>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#router>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#server>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#server-computer>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#smtp>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#snmp>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#sox>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#tablet>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#ups>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#zigbee>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIct/3.9.11#zwave>
+  a ph:def ;
+.
+phIoT:absorption
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:ac
+  a ph:def ;
+.
+phIoT:ac-elec
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:ac-elec-meter
+  a ph:def ;
+.
+phIoT:ac-freq
+  a ph:def ;
+.
+phIoT:active
+  a ph:def ;
+.
+phIoT:active-energy
+  a ph:def ;
+.
+phIoT:active-power
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:actuator
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:ahu
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:ahuZoneDelivery
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:ahuZoneDeliveryType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:ahuZoneDeliveryType ;
+.
+phIoT:air-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:air-output
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:airCooling
+  a ph:def ;
+.
+phIoT:airHandlingEquip
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:airQualityZonePoints
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:airRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:airTerminalUnit
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:airVolumeAdjustability
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:airVolumeAdjustabilityType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:airVolumeAdjustabilityType ;
+.
+phIoT:alarm
+  a ph:def ;
+.
+phIoT:apparent-energy
+  a ph:def ;
+.
+phIoT:apparent-power
+  a ph:def ;
+.
+phIoT:area
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:geoPlace ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+phIoT:ates
+  a ph:def ;
+.
+phIoT:atesClosedLoop
+  a ph:def ;
+.
+phIoT:atesDesign
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:atesDesignType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:atesDesignType ;
+.
+phIoT:atesDoublet
+  a ph:def ;
+.
+phIoT:atesDoubletPaired
+  a ph:def ;
+.
+phIoT:atesMono
+  a ph:def ;
+.
+phIoT:atesUnidirectional
+  a ph:def ;
+.
+phIoT:barometric
+  a ph:def ;
+.
+phIoT:battery
+  a ph:def ;
+.
+phIoT:biomass
+  a ph:def ;
+.
+phIoT:biomassHeating
+  a ph:def ;
+.
+phIoT:blowdown
+  a ph:def ;
+.
+phIoT:blowdown-water
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:blowdown-water-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:blowdown-water-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:blowdownWaterRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:boiler
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:bypass
+  a ph:def ;
+.
+phIoT:cav
+  a ph:def ;
+.
+phIoT:centrifugal
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:chilled
+  a ph:def ;
+.
+phIoT:chilled-water
+  a ph:def ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+phIoT:chilled-water-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:chilled-water-output
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:chilled-water-plant
+  a ph:def ;
+.
+phIoT:chilledBeam
+  a ph:def ;
+.
+phIoT:chilledBeamZone
+  a ph:def ;
+.
+phIoT:chilledWaterCooling
+  a ph:def ;
+  a phIoT:coolingProcessType ;
+.
+phIoT:chilledWaterRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:chiller
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:chiller-absorption
+  a ph:def ;
+.
+phIoT:chiller-centrifugal
+  a ph:def ;
+.
+phIoT:chiller-reciprocal
+  a ph:def ;
+.
+phIoT:chiller-rotaryScrew
+  a ph:def ;
+.
+phIoT:chillerMechanism
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:chillerMechanismType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:chillerMechanismType ;
+.
+phIoT:circ
+  a ph:def ;
+.
+phIoT:circuit
+  a ph:def ;
+.
+phIoT:cmd
+  a ph:def ;
+.
+phIoT:coal
+  a ph:def ;
+.
+phIoT:coalHeating
+  a ph:def ;
+.
+phIoT:coil
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:cold
+  a ph:def ;
+.
+phIoT:cold-water
+  a ph:def ;
+.
+phIoT:coldDeck
+  a ph:def ;
+.
+phIoT:condensate
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:condensate-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:condensate-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:condensateRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:condenser
+  a ph:def ;
+.
+phIoT:condenser-water
+  a ph:def ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+phIoT:condenser-water-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:condenser-water-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:condenserClosedLoop
+  a ph:def ;
+.
+phIoT:condenserCooling
+  a ph:def ;
+.
+phIoT:condenserLoop
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:condenserLoopType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:condenserLoopType ;
+.
+phIoT:condenserOpenLoop
+  a ph:def ;
+.
+phIoT:condenserWaterRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:conduit
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:constantAirVolume
+  a ph:def ;
+.
+phIoT:controls
+  a ph:def ;
+.
+phIoT:conveys
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:cool
+  a ph:def ;
+.
+phIoT:cool-water
+  a ph:def ;
+.
+phIoT:cooling
+  a ph:def ;
+.
+phIoT:coolingCapacity
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:elec-input ;
+  rdfs:domain phIoT:equip ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+phIoT:coolingCoil
+  a ph:def ;
+.
+phIoT:coolingOnly
+  a ph:def ;
+.
+phIoT:coolingProcess
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range phIoT:process ;
+.
+phIoT:coolingProcessType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:coolingProcessType ;
+.
+phIoT:coolingTower
+  a ph:def ;
+.
+phIoT:cools
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+.
+phIoT:crac
+  a ph:def ;
+.
+phIoT:cur
+  a ph:def ;
+.
+phIoT:cur-point
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:curErr
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:curStatus
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:curVal
+  a rdfs:Class ;
+  a ph:def ;
+.
+phIoT:current-angle
+  a ph:def ;
+.
+phIoT:current-imbalance
+  a ph:def ;
+.
+phIoT:current-magnitude
+  a ph:def ;
+.
+phIoT:current-thd
+  a ph:def ;
+.
+phIoT:damper
+  a ph:def ;
+.
+phIoT:damper-actuator
+  a ph:def ;
+.
+phIoT:dc
+  a ph:def ;
+.
+phIoT:dc-elec
+  a ph:def ;
+.
+phIoT:dc-elec-meter
+  a ph:def ;
+.
+phIoT:deadband
+  a ph:def ;
+.
+phIoT:dehumidifies
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#fluid> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#gas> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+phIoT:delta
+  a ph:def ;
+.
+phIoT:demand
+  a ph:def ;
+.
+phIoT:dessicantDehumidifier
+  a ph:def ;
+.
+phIoT:diesel
+  a ph:def ;
+.
+phIoT:directZone
+  a ph:def ;
+.
+phIoT:discharge
+  a ph:def ;
+.
+phIoT:diverting
+  a ph:def ;
+.
+phIoT:doas
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:domestic
+  a ph:def ;
+.
+phIoT:domestic-water
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:domestic-water-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:domestic-water-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:domesticWaterRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:dualDuct
+  a ph:def ;
+.
+phIoT:duct
+  a ph:def ;
+.
+phIoT:ductArea
+  a ph:def ;
+.
+phIoT:ductConfig
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:ductConfigType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:ductConfigType ;
+.
+phIoT:ductDeck
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:ductDeckType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:ductDeckType ;
+.
+phIoT:ductSection
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:ductSectionType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:ductSectionType ;
+.
+phIoT:dxCooling
+  a ph:def ;
+  a phIoT:coolingProcessType ;
+.
+phIoT:dxHeating
+  a ph:def ;
+  a phIoT:heatingProcessType ;
+.
+phIoT:economizer
+  a ph:def ;
+.
+phIoT:economizing
+  a ph:def ;
+.
+phIoT:effective
+  a ph:def ;
+.
+phIoT:efficiency
+  a ph:def ;
+.
+phIoT:elec-demand
+  a ph:def ;
+.
+phIoT:elec-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:elec-meter
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:elec-output
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:elec-panel
+  a ph:def ;
+.
+phIoT:elecHeating
+  a ph:def ;
+.
+phIoT:elecRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:elevator
+  a ph:def ;
+.
+phIoT:enable
+  a ph:def ;
+.
+phIoT:entering
+  a ph:def ;
+.
+phIoT:equip
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:equipFunction
+  a ph:def ;
+  a ph:list ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:equipRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain <https://project-haystack.org/def/phIct/3.9.11#device> ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:entity ;
+  rdfs:range ph:marker ;
+.
+phIoT:escalator
+  a ph:def ;
+.
+phIoT:evaporator
+  a ph:def ;
+.
+phIoT:exhaust
+  a ph:def ;
+.
+phIoT:export
+  a ph:def ;
+.
+phIoT:extraction
+  a ph:def ;
+.
+phIoT:faceBypass
+  a ph:def ;
+.
+phIoT:fan
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:fan-motor
+  a ph:def ;
+.
+phIoT:fanPowered
+  a ph:def ;
+.
+phIoT:fcu
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:filter
+  a ph:def ;
+.
+phIoT:floor
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:floorNum
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:space ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+phIoT:flow-meter
+  a ph:def ;
+.
+phIoT:flowInverter
+  a ph:def ;
+.
+phIoT:flue
+  a ph:def ;
+.
+phIoT:freezeStat
+  a ph:def ;
+.
+phIoT:fuelOil
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:fuelOil-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:fuelOil-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:fuelOilHeating
+  a ph:def ;
+.
+phIoT:fuelOilRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:fumeHood
+  a ph:def ;
+.
+phIoT:gasoline
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:gasoline-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:gasoline-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:gasolineRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:ground
+  a ph:def ;
+.
+phIoT:ground-floor
+  a ph:def ;
+.
+phIoT:ground-water
+  a ph:def ;
+.
+phIoT:header
+  a ph:def ;
+.
+phIoT:heat
+  a ph:def ;
+.
+phIoT:heatExchanger
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:heatPump
+  a ph:def ;
+.
+phIoT:heatWheel
+  a ph:def ;
+.
+phIoT:heating
+  a ph:def ;
+.
+phIoT:heatingCoil
+  a ph:def ;
+.
+phIoT:heatingOnly
+  a ph:def ;
+.
+phIoT:heatingProcess
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range phIoT:process ;
+.
+phIoT:heatingProcessType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:heatingProcessType ;
+.
+phIoT:heats
+  a ph:def ;
+  a ph:list ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+.
+phIoT:his
+  a ph:def ;
+.
+phIoT:his-point
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:hisErr
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:hisMode
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:hisStatus
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:hisTotalized
+  a ph:def ;
+.
+phIoT:hot
+  a ph:def ;
+.
+phIoT:hot-water
+  a ph:def ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+phIoT:hot-water-boiler
+  a ph:def ;
+.
+phIoT:hot-water-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:hot-water-output
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:hot-water-plant
+  a ph:def ;
+.
+phIoT:hotDeck
+  a ph:def ;
+.
+phIoT:hotWaterHeating
+  a ph:def ;
+.
+phIoT:hotWaterRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:humidifier
+  a ph:def ;
+.
+phIoT:humidifier-equip
+  a ph:def ;
+.
+phIoT:humidifies
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#fluid> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#gas> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+phIoT:hvac
+  a ph:def ;
+.
+phIoT:hvac-zone-space
+  a ph:def ;
+.
+phIoT:hvacMode
+  a ph:def ;
+  a phIoT:point ;
+.
+phIoT:hvacZonePoints
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:imbalance
+  a ph:def ;
+.
+phIoT:import
+  a ph:def ;
+.
+phIoT:infiltration
+  a ph:def ;
+.
+phIoT:inlet
+  a ph:def ;
+.
+phIoT:isolation
+  a ph:def ;
+.
+phIoT:leaving
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIoT/3.9.11#lib:phIoT>
+  a rdfs:Resource ;
+  a ph:def ;
+  a ph:lib ;
+  a ph:list ;
+.
+phIoT:lighting
+  a ph:def ;
+.
+phIoT:lighting-zone-space
+  a ph:def ;
+.
+phIoT:lightingZonePoints
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:load
+  a ph:def ;
+.
+phIoT:luminaire
+  a ph:def ;
+.
+phIoT:makeup
+  a ph:def ;
+.
+phIoT:makeup-water
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:makeup-water-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:makeup-water-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:makeupWaterRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:mau
+  a ph:def ;
+.
+phIoT:meter
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:meterScope
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:meterScopeType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:meterScopeType ;
+.
+phIoT:mixed
+  a ph:def ;
+.
+phIoT:mixing
+  a ph:def ;
+.
+phIoT:motor
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:moves
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+.
+phIoT:movingWalkway
+  a ph:def ;
+.
+phIoT:multiZone
+  a ph:def ;
+.
+phIoT:naturalGas
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:naturalGas-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:naturalGas-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:naturalGasHeating
+  a ph:def ;
+.
+phIoT:naturalGasRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:net
+  a ph:def ;
+.
+phIoT:neutralDeck
+  a ph:def ;
+.
+phIoT:occ
+  a ph:def ;
+.
+phIoT:occupancy
+  a ph:def ;
+.
+phIoT:occupants
+  a ph:def ;
+  a <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+phIoT:occupied
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIoT/3.9.11#op:hisRead>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIoT/3.9.11#op:hisWrite>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIoT/3.9.11#op:invokeAction>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+<https://project-haystack.org/def/phIoT/3.9.11#op:pointWrite>
+  a rdfs:Resource ;
+  a ph:def ;
+.
+phIoT:outside
+  a ph:def ;
+.
+phIoT:panel
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:parallel
+  a ph:def ;
+.
+phIoT:perimeterHeat
+  a ph:def ;
+.
+phIoT:pf
+  a ph:def ;
+.
+phIoT:phase
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:pipe
+  a ph:def ;
+.
+phIoT:pipeSection
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:pipeSectionType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:pipeSectionType ;
+.
+phIoT:plant
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:plantLoop
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:plantLoopType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:plantLoopType ;
+.
+phIoT:point
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:pointFunction
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:pointFunctionType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:pointFunctionType ;
+.
+phIoT:pointGroup
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:pointQuantity
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:pointSubject
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:pressureDependent
+  a ph:def ;
+.
+phIoT:pressureIndependent
+  a ph:def ;
+.
+phIoT:primaryFunction
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:geoPlace ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:primaryLoop
+  a ph:def ;
+.
+phIoT:process
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:produces
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:propane
+  a ph:def ;
+.
+phIoT:propaneHeating
+  a ph:def ;
+.
+phIoT:pump
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:pump-motor
+  a ph:def ;
+.
+phIoT:purge
+  a ph:def ;
+.
+phIoT:purge-water
+  a ph:def ;
+.
+phIoT:radiantEquip
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:radiantFloor
+  a ph:def ;
+.
+phIoT:radiator
+  a ph:def ;
+.
+phIoT:reactive
+  a ph:def ;
+.
+phIoT:reactive-energy
+  a ph:def ;
+.
+phIoT:reactive-power
+  a ph:def ;
+.
+phIoT:reciprocal
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:refrig
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:refrig-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:refrig-output
+  a ph:def ;
+  a ph:symbol ;
+.
+phIoT:refrigRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:regulates
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:reheat
+  a ph:def ;
+.
+phIoT:reheats
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+.
+phIoT:return
+  a ph:def ;
+.
+phIoT:roof
+  a ph:def ;
+.
+phIoT:roof-floor
+  a ph:def ;
+.
+phIoT:room
+  a ph:def ;
+.
+phIoT:rotaryScrew
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:rtu
+  a ph:def ;
+.
+phIoT:run
+  a ph:def ;
+.
+phIoT:secondaryLoop
+  a ph:def ;
+.
+phIoT:sensor
+  a ph:def ;
+.
+phIoT:series
+  a ph:def ;
+.
+phIoT:singleDuct
+  a ph:def ;
+.
+phIoT:site
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:siteMeter
+  a ph:def ;
+.
+phIoT:siteRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:entity ;
+  rdfs:range ph:geoPlace ;
+  rdfs:range ph:marker ;
+.
+phIoT:sp
+  a ph:def ;
+.
+phIoT:space
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:spaceRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:entity ;
+  rdfs:range ph:marker ;
+.
+phIoT:stage
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+phIoT:standby
+  a ph:def ;
+.
+phIoT:steam-boiler
+  a ph:def ;
+.
+phIoT:steam-input
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:steam-output
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:steam-plant
+  a ph:def ;
+.
+phIoT:steamHeating
+  a ph:def ;
+.
+phIoT:steamRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:input ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range ph:output ;
+.
+phIoT:stores
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:submeter
+  a ph:def ;
+.
+phIoT:submeterOf
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:equip ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:entity ;
+  rdfs:range ph:marker ;
+  rdfs:range phIoT:equip ;
+.
+phIoT:subterranean
+  a ph:def ;
+.
+phIoT:subterranean-floor
+  a ph:def ;
+.
+phIoT:switch
+  a ph:def ;
+.
+phIoT:tank
+  a ph:def ;
+.
+phIoT:tertiaryLoop
+  a ph:def ;
+.
+phIoT:thd
+  a ph:def ;
+.
+phIoT:thermal
+  a ph:def ;
+.
+phIoT:thermostat
+  a ph:def ;
+.
+phIoT:tripleDuct
+  a ph:def ;
+.
+phIoT:unitVent
+  a ph:def ;
+.
+phIoT:unocc
+  a ph:def ;
+.
+phIoT:valve
+  a ph:def ;
+.
+phIoT:valve-actuator
+  a ph:def ;
+.
+phIoT:variableAirVolume
+  a ph:def ;
+.
+phIoT:vav
+  a ph:def ;
+.
+phIoT:vav-parallel
+  a ph:def ;
+.
+phIoT:vav-series
+  a ph:def ;
+.
+phIoT:vavAirCircuit
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:vavAirCircuitType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:vavAirCircuitType ;
+.
+phIoT:vavModulation
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+.
+phIoT:vavModulationType
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a phIoT:vavModulationType ;
+.
+phIoT:vavZone
+  a ph:def ;
+.
+phIoT:ventilates
+  a ph:def ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:marker ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#fluid> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#gas> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+  rdfs:range <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+phIoT:ventilation
+  a ph:def ;
+.
+phIoT:verticalTransport
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:vfd
+  a ph:def ;
+.
+phIoT:vfd-freq
+  a ph:def ;
+.
+phIoT:vfd-speed
+  a ph:def ;
+.
+phIoT:volt-angle
+  a ph:def ;
+.
+phIoT:volt-imbalance
+  a ph:def ;
+.
+phIoT:volt-magnitude
+  a ph:def ;
+.
+phIoT:warm
+  a ph:def ;
+.
+phIoT:warm-water
+  a ph:def ;
+.
+phIoT:waterCooling
+  a ph:def ;
+.
+phIoT:weather-point
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:weatherStation
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+.
+phIoT:weatherStationRef
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:geoPlace ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range owl:Thing ;
+  rdfs:range ph:entity ;
+  rdfs:range ph:geoPlace ;
+  rdfs:range ph:marker ;
+.
+phIoT:well
+  a ph:def ;
+.
+phIoT:wire
+  a ph:def ;
+.
+phIoT:writable
+  a ph:def ;
+.
+phIoT:writable-point
+  a ph:def ;
+  a ph:list ;
+.
+phIoT:writeErr
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:writeLevel
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+phIoT:writeStatus
+  a ph:def ;
+  a phIoT:point ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:marker ;
+  rdfs:domain phIoT:point ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:string ;
+.
+phIoT:writeVal
+  a rdfs:Class ;
+  a ph:def ;
+.
+phIoT:yearBuilt
+  a ph:def ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:domain owl:Thing ;
+  rdfs:domain ph:entity ;
+  rdfs:domain ph:geoPlace ;
+  rdfs:domain ph:marker ;
+  rdfs:range rdfs:Literal ;
+  rdfs:range rdfs:Resource ;
+  rdfs:range xsd:double ;
+.
+phIoT:zone
+  a ph:def ;
+.
+phIoT:zone-space
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#air>
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#air> ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#air-temp>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#air-velocity>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#airQuality>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#angle>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#apparent>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#atmospheric>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#atmospheric-pressure>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#avg>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#ch2o>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#ch2o-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#ch4>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#ch4-emission>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#cloudage>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#co>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#co-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#co2>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#co2-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#co2-emission>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#co2e>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#concentration>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#current>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#daytime>
+  a ph:def ;
+  a phIoT:point ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#dewPoint>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#direction>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#elec>
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#elec-current>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#elec-energy>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#elec-power>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#elec-volt>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#emission>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#energy>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#enthalpy>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#feelsLike>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#flow>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#fluid>
+  a ph:def ;
+  a ph:list ;
+  a <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#flux>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#freq>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#gas>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#hfc>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#hfc-emission>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#humidity>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#ice>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#illuminance>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#intensity>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#irradiance>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#level>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#lib:phScience>
+  a rdfs:Resource ;
+  a ph:def ;
+  a ph:lib ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#light>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#light-level>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#liquid>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#luminance>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#luminous>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#luminous-flux>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#luminous-intensity>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#magnitude>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#n2o>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#n2o-emission>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#nf3>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#nf3-emission>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#nh3>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#nh3-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#no2>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#no2-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#o2>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#o3>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#o3-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pfc>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pfc-emission>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#phenomenon>
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pm01>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pm01-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pm10>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pm10-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pm25>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pm25-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#power>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#precipitation>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#prefUnit>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#pressure>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#quality>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#quantities>
+  a ph:def ;
+  a ph:symbol ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#quantity>
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#quantity> ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#quantityOf>
+  a ph:def ;
+  a ph:symbol ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#sf6>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#sf6-emission>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#solar>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#solar-irradiance>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#solid>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#speed>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#steam>
+  a ph:def ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#substance> ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#substance>
+  a ph:def ;
+  a ph:list ;
+  a ph:symbol ;
+  a <https://project-haystack.org/def/phScience/3.9.11#phenomenon> ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#temp>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#total>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#tvoc>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#tvoc-concentration>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#velocity>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#visibility>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#volt>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#volume>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#water>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#weather>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#weatherCond>
+  a ph:def ;
+  a phIoT:point ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#wetBulb>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#wind>
+  a ph:def ;
+  a ph:list ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#wind-direction>
+  a ph:def ;
+.
+<https://project-haystack.org/def/phScience/3.9.11#wind-speed>
+  a ph:def ;
+.
