@@ -11,7 +11,6 @@
 
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack>
   a owl:Ontology ;
-  spin:imports <http://topbraid.org/spin/owlrl-all> ;
   owl:imports <file:///E:/TBCMEResearchWorkspace/design-pattern.qzc438.com/ProjectHaystack/defs.ttl> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
@@ -282,12 +281,13 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1>
   a phIoT:ahu ;
   rdfs:label "AHU B1" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_CHWCoil>
   a phIoT:coolingCoil ;
   rdfs:label "AHU B1 CHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_ClgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_Filter> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_ClgVlv>
@@ -298,13 +298,16 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_Filter>
   a phIoT:filter ;
   rdfs:label "AHU B1 Filter" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_OutsideDamper> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_ReturnDamper> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HHWCoil>
   a phIoT:heatingCoil ;
   rdfs:label "AHU B1 HHWCoil" ;
-  ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HtgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_CHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+  phIoT:hotWaterRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HtgVlv> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HtgVlv>
   a phIoT:valve ;
@@ -319,22 +322,25 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_ReturnDamper>
   a phIoT:damper ;
   rdfs:label "AHU B1 Return damper" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_SupplyFan>
   a phIoT:fan ;
   rdfs:label "AHU B1 Supply fan" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1>
   a phIoT:ahu ;
   rdfs:label "AHU F1" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_CHWCoil>
   a phIoT:coolingCoil ;
   rdfs:label "AHU F1 CHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_ClgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_Filter> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_ClgVlv>
@@ -345,12 +351,15 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_Filter>
   a phIoT:filter ;
   rdfs:label "AHU F1 Filter" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_OutsideDamper> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_ReturnDamper> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HHWCoil>
   a phIoT:heatingCoil ;
   rdfs:label "AHU F1 HHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HtgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_CHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HtgVlv>
@@ -361,6 +370,7 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_OutsideDamper>
   a phIoT:damper ;
   rdfs:label "AHU F1 Outside damper" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_ReturnDamper>
@@ -371,17 +381,19 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_SupplyFan>
   a phIoT:fan ;
   rdfs:label "AHU F1 Supply fan" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2>
   a phIoT:ahu ;
   rdfs:label "AHU F2" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_CHWCoil>
   a phIoT:coolingCoil ;
   rdfs:label "AHU F2 CHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_ClgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_Filter> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_ClgVlv>
@@ -392,12 +404,15 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_Filter>
   a phIoT:filter ;
   rdfs:label "AHU F2 Filter" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_OutsideDamper> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_ReturnDamper> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HHWCoil>
   a phIoT:heatingCoil ;
   rdfs:label "AHU F2 HHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HtgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_CHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HtgVlv>
@@ -413,22 +428,224 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_ReturnDamper>
   a phIoT:damper ;
   rdfs:label "AHU F2 Return damper" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_SupplyFan>
   a phIoT:fan ;
   rdfs:label "AHU F2 Supply fan" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1>
   a phIoT:ahu ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+            <http://spinrdf.org/sp#predicate> phIoT:equipRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ]
+          [
+            <http://spinrdf.org/sp#varName> "feedsAirComponent" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+            <http://spinrdf.org/sp#predicate> phIoT:equipRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:airRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "feedsAirComponent" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "inputSubstance" ;
+          ]
+          [
+            <http://spinrdf.org/sp#varName> "outputSubstance" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "inputSubstance" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> ph:inputs ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_Filter> ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "outputSubstance" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> ph:outputs ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_Filter> ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "type" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "type" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> rdf:type ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+          ]
+        ) ;
+    ] ;
   rdfs:label "AHU G1" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Enb>
+  a phIoT:point ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Enb" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+  phIoT:pointFunction <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Enable_Status> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_RmSp>
+  a phIoT:point ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Rm sp" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+  phIoT:pointFunction <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Room_Air_Temperature_Setpoint> ;
+  phIoT:pointQuantity <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air-temp> ;
+  phIoT:pointSubject <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Sts>
+  a phIoT:point ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Sts" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+  phIoT:pointFunction <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#System_Status> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp>
+  a phIoT:point ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "device" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "device" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:equipRef ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "substance" ;
+          ]
+          [
+            <http://spinrdf.org/sp#varName> "quantitykind" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "substance" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:pointSubject ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "quantitykind" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:pointQuantity ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "timeseries" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "timeseries" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> ph:time ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "type" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "type" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:pointFunction ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Tmp" ;
+  ph:time "air-temperature-stream-XXX" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+  phIoT:pointFunction <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Air_Temperature_Sensor> ;
+  phIoT:pointQuantity <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air-temp> ;
+  phIoT:pointSubject <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_CHWCoil>
   a phIoT:coolingCoil ;
   rdfs:label "AHU G1 CHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_ClgVlv> ;
+  ph:inputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  ph:outputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_Filter> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_ClgVlv>
@@ -439,12 +656,19 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_Filter>
   a phIoT:filter ;
   rdfs:label "AHU G1 Filter" ;
+  ph:inputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  ph:outputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_OutsideDamper> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_ReturnDamper> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HHWCoil>
   a phIoT:heatingCoil ;
   rdfs:label "AHU G1 HHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HtgVlv> ;
+  ph:inputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  ph:outputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_CHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HtgVlv>
@@ -455,27 +679,36 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_OutsideDamper>
   a phIoT:damper ;
   rdfs:label "AHU G1 Outside damper" ;
+  ph:inputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  ph:outputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_ReturnDamper>
   a phIoT:damper ;
   rdfs:label "AHU G1 Return damper" ;
+  ph:inputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  ph:outputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_SupplyFan>
   a phIoT:fan ;
   rdfs:label "AHU G1 Supply fan" ;
+  ph:inputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  ph:outputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2>
   a phIoT:ahu ;
   rdfs:label "AHU G2" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_CHWCoil>
   a phIoT:coolingCoil ;
   rdfs:label "AHU G2 CHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_ClgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_Filter> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_ClgVlv>
@@ -486,12 +719,15 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_Filter>
   a phIoT:filter ;
   rdfs:label "AHU G2 Filter" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_OutsideDamper> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_ReturnDamper> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HHWCoil>
   a phIoT:heatingCoil ;
   rdfs:label "AHU G2 HHWCoil" ;
   ph:hasTag <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HtgVlv> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_CHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HtgVlv>
@@ -507,189 +743,391 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_ReturnDamper>
   a phIoT:damper ;
   rdfs:label "AHU G2 Return damper" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_SupplyFan>
   a phIoT:fan ;
   rdfs:label "AHU G2 Supply fan" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Air_Temperature_Sensor>
+  a phIoT:sensor ;
+  rdfs:label "Air Temperature Sensor" ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1>
   a phIoT:hvac-zone-space ;
   rdfs:label "B1" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_SupplyFan> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B2>
   a phIoT:hvac-zone-space ;
   rdfs:label "B2" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B3>
   a phIoT:hvac-zone-space ;
   rdfs:label "B3" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B4>
   a phIoT:hvac-zone-space ;
   rdfs:label "B4" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement>
   a phIoT:subterranean-floor ;
   rdfs:label "Basement" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.100>
   a phIoT:room ;
   rdfs:label "Basement B.100" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.101>
   a phIoT:room ;
   rdfs:label "Basement B.101" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.102>
   a phIoT:room ;
   rdfs:label "Basement B.102" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.103>
   a phIoT:room ;
   rdfs:label "Basement B.103" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.104>
   a phIoT:room ;
   rdfs:label "Basement B.100" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.105>
   a phIoT:room ;
   rdfs:label "Basement B.105" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B3> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.106>
   a phIoT:room ;
   rdfs:label "Basement B.106" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.107>
   a phIoT:room ;
   rdfs:label "Basement B.107" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.108>
   a phIoT:room ;
   rdfs:label "Basement B.108" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B4> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.109>
   a phIoT:room ;
   rdfs:label "Basement B.109" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.110>
   a phIoT:room ;
   rdfs:label "Basement B.110" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.111>
   a phIoT:room ;
   rdfs:label "Basement B.111" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.112>
   a phIoT:room ;
   rdfs:label "Basement B.112" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.113>
   a phIoT:room ;
   rdfs:label "Basement B.113" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.114>
   a phIoT:room ;
   rdfs:label "Basement B.114" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.115>
   a phIoT:room ;
   rdfs:label "Basement B.115" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#B1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.116>
   a phIoT:room ;
   rdfs:label "Basement B.116" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Boiler1>
   a phIoT:boiler ;
   rdfs:label "Boiler1" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_HHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_HHWCoil> ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_HHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_HHWCoil> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.116> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307>
   a phIoT:site ;
   rdfs:label "Building307" ;
 .
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307>
+  a phIoT:site ;
+  rdfs:label "Building_307" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFF1>
+  a phIoT:unitVent ;
+  rdfs:label "CEFF1" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.117a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1>
+  a phIoT:unitVent ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "equipment" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+            <http://spinrdf.org/sp#predicate> phIoT:airRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:spaceRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> phIoT:hvac-zone-space ;
+            <http://spinrdf.org/sp#predicate> rdf:type ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "equipment" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:airRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "feedlocation" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+            <http://spinrdf.org/sp#predicate> phIoT:airRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "hvaczone" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+            <http://spinrdf.org/sp#predicate> phIoT:airRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:spaceRef ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> phIoT:hvac-zone-space ;
+            <http://spinrdf.org/sp#predicate> rdf:type ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "location" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "location" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> phIoT:spaceRef ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+          ]
+        ) ;
+    ] ;
+  rdfs:label "CEFG1" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.118a> ;
+.
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Chiller1>
   a phIoT:chiller ;
   rdfs:label "Chiller1" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F3_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F4_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F5_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_F6_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G3_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G4_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G5_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AC_G6_CHWCoil> ;
   phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_B1_CHWCoil> ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B3_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B4_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_F7_CHWCoil> ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_CHWCoil> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.116> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Enable_Status>
+  a phIoT:sensor ;
+  rdfs:label "Enable Status" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#EnergyManagementSystem.Hvac_Bldg307_LvlG_CEFG1_MaxDmdEn>
+  a phIoT:point ;
+  rdfs:label "Energy management system.Hvac Bldg307 Lvl g CEFG1 Max dmd en" ;
+  phIoT:equipRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+  phIoT:pointFunction <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Operating_Mode_Status> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1>
   a phIoT:hvac-zone-space ;
   rdfs:label "F1" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F1_SupplyFan> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2>
   a phIoT:hvac-zone-space ;
   rdfs:label "F2" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_F2_SupplyFan> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F3>
   a phIoT:hvac-zone-space ;
   rdfs:label "F3" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F4>
   a phIoT:hvac-zone-space ;
   rdfs:label "F4" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F5>
   a phIoT:hvac-zone-space ;
   rdfs:label "F5" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F6>
   a phIoT:hvac-zone-space ;
   rdfs:label "F6" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F7>
   a phIoT:hvac-zone-space ;
   rdfs:label "F7" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_B2>
   a phIoT:fcu ;
@@ -866,7 +1304,7 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7>
   a phIoT:fcu ;
   rdfs:label "FCU G7" ;
-  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#FCU_G7_CHWCoil>
@@ -909,357 +1347,489 @@
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1>
   a phIoT:hvac-zone-space ;
   rdfs:label "G1" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  ph:inputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  ph:outputs <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G1_SupplyFan> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2>
   a phIoT:hvac-zone-space ;
   rdfs:label "G2" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#AHU_G2_SupplyFan> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G3>
   a phIoT:hvac-zone-space ;
   rdfs:label "G3" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G4>
   a phIoT:hvac-zone-space ;
   rdfs:label "G4" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G5>
   a phIoT:hvac-zone-space ;
   rdfs:label "G5" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G6>
   a phIoT:hvac-zone-space ;
   rdfs:label "G6" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7>
   a phIoT:hvac-zone-space ;
   rdfs:label "G7" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground>
   a phIoT:ground-floor ;
   rdfs:label "Ground" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.100>
   a phIoT:room ;
   rdfs:label "Ground G.100" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.101>
   a phIoT:room ;
   rdfs:label "Ground G.101" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.102>
   a phIoT:room ;
   rdfs:label "Ground G.102" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.103>
   a phIoT:room ;
   rdfs:label "Ground G.103" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.104>
   a phIoT:room ;
   rdfs:label "Ground G.104" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafG1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G3> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.105>
   a phIoT:room ;
   rdfs:label "Ground G.105" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.106>
   a phIoT:room ;
   rdfs:label "Ground G.106" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.107>
   a phIoT:room ;
   rdfs:label "Ground G.107" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.108>
   a phIoT:room ;
   rdfs:label "Ground G.108" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.109>
   a phIoT:room ;
   rdfs:label "Ground G.109" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.110>
   a phIoT:room ;
   rdfs:label "Ground G.110" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.111>
   a phIoT:room ;
   rdfs:label "Ground G.111" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafG1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G4> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112>
   a phIoT:room ;
   rdfs:label "Ground G.112" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112a>
   a phIoT:room ;
   rdfs:label "Ground G.112a" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#KefB1> ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#KefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G7> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.113>
   a phIoT:room ;
   rdfs:label "Ground G.113" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.114>
   a phIoT:room ;
   rdfs:label "Ground G.114" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.115>
   a phIoT:room ;
   rdfs:label "Ground G.115" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.116>
   a phIoT:room ;
   rdfs:label "Ground G.116" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.117>
   a phIoT:room ;
   rdfs:label "Ground G.117" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.118>
   a phIoT:room ;
   rdfs:label "Ground G.118" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.118a>
   a phIoT:room ;
   rdfs:label "Ground G.118" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFG1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.119>
   a phIoT:room ;
   rdfs:label "Ground G.119" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafG2> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G5> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.120>
   a phIoT:room ;
   rdfs:label "Ground G.120" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.121>
   a phIoT:room ;
   rdfs:label "Ground G.121" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.122>
   a phIoT:room ;
   rdfs:label "Ground G.122" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.123>
   a phIoT:room ;
   rdfs:label "Ground G.123" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.124>
   a phIoT:room ;
   rdfs:label "Ground G.124" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafG2> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#G6> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#KefB1>
+  a phIoT:unitVent ;
+  rdfs:label "Kef b1" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#KefR1>
+  a phIoT:unitVent ;
+  rdfs:label "Kef r1" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.112a> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1>
   a phIoT:roof-floor ;
   rdfs:label "Level1" ;
-  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building307> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.100>
   a phIoT:room ;
   rdfs:label "Level1 1.100" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.101>
   a phIoT:room ;
   rdfs:label "Level1 1.101" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.102>
   a phIoT:room ;
   rdfs:label "Level1 1.102" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.103>
   a phIoT:room ;
   rdfs:label "Level1 1.103" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.104>
   a phIoT:room ;
   rdfs:label "Level1 1.104" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafF1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F3> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.105>
   a phIoT:room ;
   rdfs:label "Level1 1.105" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.106>
   a phIoT:room ;
   rdfs:label "Level1 1.106" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.107>
   a phIoT:room ;
   rdfs:label "Level1 1.107" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.108>
   a phIoT:room ;
   rdfs:label "Level1 1.108" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.109>
   a phIoT:room ;
   rdfs:label "Level1 1.109" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafF1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F4> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.110>
   a phIoT:room ;
   rdfs:label "Level1 1.110" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F7> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.111>
   a phIoT:room ;
   rdfs:label "Level1 1.111" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.112>
   a phIoT:room ;
   rdfs:label "Level1 1.112" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.113>
   a phIoT:room ;
   rdfs:label "Level1 1.113" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.114>
   a phIoT:room ;
   rdfs:label "Level1 1.114" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.115>
   a phIoT:room ;
   rdfs:label "Level1 1.115" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.116>
   a phIoT:room ;
   rdfs:label "Level1 1.116" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.117>
   a phIoT:room ;
   rdfs:label "Level1 1.117" ;
-  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F7> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.117a>
   a phIoT:room ;
   rdfs:label "Level1 1.117a" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#CEFF1> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F1> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.118>
   a phIoT:room ;
   rdfs:label "Level1 1.118" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafF2> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F5> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.119>
   a phIoT:room ;
   rdfs:label "Level1 1.119" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.120>
   a phIoT:room ;
   rdfs:label "Level1 1.120" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.121>
   a phIoT:room ;
   rdfs:label "Level1 1.121" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.122>
   a phIoT:room ;
   rdfs:label "Level1 1.122" ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F2> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
 .
 <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.123>
   a phIoT:room ;
   rdfs:label "Level1 1.123" ;
+  phIoT:airRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafF2> ;
+  phIoT:siteRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Building_307> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#F6> ;
   phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafF1>
+  a phIoT:unitVent ;
+  rdfs:label "Oaf f1" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafF2>
+  a phIoT:unitVent ;
+  rdfs:label "Oaf f2" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Level1_1.118> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafG1>
+  a phIoT:unitVent ;
+  rdfs:label "Oaf g1" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#OafG2>
+  a phIoT:unitVent ;
+  rdfs:label "Oaf g2" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Ground_G.119> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Operating_Mode_Status>
+  a phIoT:sensor ;
+  rdfs:label "Operating Mode Status" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Room_Air_Temperature_Setpoint>
+  a phIoT:sp ;
+  rdfs:label "Room Air Temperature Setpoint" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#System_Status>
+  a phIoT:sensor ;
+  rdfs:label "System Status" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#TefR1>
+  a phIoT:unitVent ;
+  rdfs:label "Tef r1" ;
+  phIoT:spaceRef <http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#Basement_B.109> ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air>
+  a <https://project-haystack.org/def/phScience/3.9.11#air> ;
+  rdfs:label "air" ;
+.
+<http://design-pattern-instance-only.qzc438.com/ProjectHaystack/C_B307_Haystack#air-temp>
+  a <https://project-haystack.org/def/phScience/3.9.11#air-temp> ;
+  rdfs:label "air-temp" ;
 .

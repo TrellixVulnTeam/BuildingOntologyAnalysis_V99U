@@ -5,9 +5,11 @@
 @prefix j.0: <http://www.google.com/digitalbuildings/0.0.1/subfields#> .
 @prefix j.1: <http://www.google.com/digitalbuildings/0.0.1/hvac#> .
 @prefix j.2: <http://www.google.com/digitalbuildings/0.0.1/facilities#> .
+@prefix j.5: <http://spinrdf.org/sp#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spin: <http://spinrdf.org/spin#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding>
@@ -297,7 +299,7 @@
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_B1>
   a j.1:Ahu ;
-  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building307> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building_307> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_B1_CHWCoil> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_B1_ClgVlv> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_B1_Filter> ;
@@ -347,7 +349,7 @@
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F1>
   a j.1:Ahu ;
-  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building307> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building_307> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F1_CHWCoil> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F1_ClgVlv> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F1_Filter> ;
@@ -397,7 +399,7 @@
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F2>
   a j.1:Ahu ;
-  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building307> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building_307> ;
   db:uses <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F2_CHWCoil> ;
   db:uses <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F2_ClgVlv> ;
   db:uses <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_F2_Filter> ;
@@ -447,7 +449,41 @@
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1>
   a j.1:Ahu ;
-  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building307> ;
+  spin:query [
+      a j.5:Select ;
+      j.5:resultVariables (
+          [
+            j.5:varName "component" ;
+          ]
+        ) ;
+      j.5:where (
+          [
+            j.5:object [
+                j.5:varName "component" ;
+              ] ;
+            j.5:predicate db:isComposedOf ;
+            j.5:subject <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1> ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a j.5:Select ;
+      j.5:resultVariables (
+          [
+            j.5:varName "type" ;
+          ]
+        ) ;
+      j.5:where (
+          [
+            j.5:object [
+                j.5:varName "type" ;
+              ] ;
+            j.5:predicate rdf:type ;
+            j.5:subject <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1> ;
+          ]
+        ) ;
+    ] ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building_307> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1_CHWCoil> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1_ClgVlv> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1_Filter> ;
@@ -458,6 +494,60 @@
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1_SupplyFan> ;
   db:usesOptional <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#G1> ;
   rdfs:label "AHU G1" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Enb>
+  a <http://www.google.com/digitalbuildings/0.0.1/fields#Exhaust_fan_run_status> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFG1> ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Enb" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_RmSp>
+  a <http://www.google.com/digitalbuildings/0.0.1/fields#Zone_air_temperature_setpoint> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFG1> ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Rm sp" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Sts>
+  a <http://www.google.com/digitalbuildings/0.0.1/fields#Exhaust_fan_run_status> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFG1> ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Sts" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp>
+  a <http://www.google.com/digitalbuildings/0.0.1/fields#Exhaust_air_temperature_sensor> ;
+  spin:query [
+      a j.5:Select ;
+      j.5:resultVariables (
+          [
+            j.5:varName "device" ;
+          ]
+        ) ;
+      j.5:where (
+          [
+            j.5:object [
+                j.5:varName "device" ;
+              ] ;
+            j.5:predicate db:hasPhysicalLocation ;
+            j.5:subject <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  spin:query [
+      a j.5:Select ;
+      j.5:resultVariables (
+          [
+            j.5:varName "type" ;
+          ]
+        ) ;
+      j.5:where (
+          [
+            j.5:object [
+                j.5:varName "type" ;
+              ] ;
+            j.5:predicate rdf:type ;
+            j.5:subject <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFG1> ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Tmp" ;
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G1_CHWCoil>
   a j.0:Coil ;
@@ -497,7 +587,7 @@
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G2>
   a j.1:Ahu ;
-  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building307> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building_307> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G2_CHWCoil> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G2_ClgVlv> ;
   db:isComposedOf <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#AHU_G2_Filter> ;
@@ -560,7 +650,6 @@
   db:hasRoom <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement_B.113> ;
   db:hasRoom <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement_B.114> ;
   db:hasRoom <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement_B.115> ;
-  db:hasRoom <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement_B.116> ;
   rdfs:label "B1" ;
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#B2>
@@ -669,18 +758,56 @@
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Boiler1>
   a j.0:Heater ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement_B.116> ;
   rdfs:label "Boiler1" ;
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building307>
   a j.2:Building ;
+  rdfs:label "Building307" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Building_307>
+  a j.2:Building ;
   db:hasFloor <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement> ;
   db:hasFloor <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Ground> ;
   db:hasFloor <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Level1> ;
-  rdfs:label "Building307" ;
+  rdfs:label "Building_307" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFF1>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Level1_1.117a> ;
+  rdfs:label "CEFF1" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFG1>
+  a j.1:Fan ;
+  spin:query [
+      a j.5:Select ;
+      j.5:resultVariables (
+          [
+            j.5:varName "location" ;
+          ]
+        ) ;
+      j.5:where (
+          [
+            j.5:object [
+                j.5:varName "location" ;
+              ] ;
+            j.5:predicate db:hasPhysicalLocation ;
+            j.5:subject <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFG1> ;
+          ]
+        ) ;
+    ] ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Ground_G.118a> ;
+  rdfs:label "CEFG1" ;
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Chiller1>
   a j.0:Cooler ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement_B.116> ;
   rdfs:label "Chiller1" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#EnergyManagementSystem.Hvac_Bldg307_LvlG_CEFG1_MaxDmdEn>
+  a <http://www.google.com/digitalbuildings/0.0.1/fields#Exhaust_fan_run_status> ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#CEFG1> ;
+  rdfs:label "Energy management system.Hvac Bldg307 Lvl g CEFG1 Max dmd en" ;
 .
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#F1>
   a j.1:Zone_hvac ;
@@ -1154,6 +1281,16 @@
   a j.2:Room ;
   rdfs:label "Ground G.124" ;
 .
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#KefB1>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Ground_G.112a> ;
+  rdfs:label "Kef b1" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#KefR1>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Ground_G.112a> ;
+  rdfs:label "Kef r1" ;
+.
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Level1>
   a j.2:Floor ;
   db:hasRoom <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Level1_1.100> ;
@@ -1282,4 +1419,29 @@
 <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Level1_1.123>
   a j.2:Room ;
   rdfs:label "Level1 1.123" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#OafF1>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Level1_1.104> ;
+  rdfs:label "Oaf f1" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#OafF2>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Level1_1.118> ;
+  rdfs:label "Oaf f2" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#OafG1>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Ground_G.104> ;
+  rdfs:label "Oaf g1" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#OafG2>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Ground_G.119> ;
+  rdfs:label "Oaf g2" ;
+.
+<http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#TefR1>
+  a j.1:Fan ;
+  db:hasPhysicalLocation <http://design-pattern-instance-only.qzc438.com/GoogleDigitalBuilding/C_B307_DigitalBuilding#Basement_B.109> ;
+  rdfs:label "Tef r1" ;
 .

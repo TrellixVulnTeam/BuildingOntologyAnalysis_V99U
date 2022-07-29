@@ -30,32 +30,41 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F3 CHWCoil" ;
   skos:prefLabel "AC F3 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F3 Clg vlv" ;
   skos:prefLabel "AC F3 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F3 HHWCoil" ;
   skos:prefLabel "AC F3 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F3 Htg vlv" ;
   skos:prefLabel "AC F3 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC F3 Supply fan" ;
   skos:prefLabel "AC F3 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4>
   a asset:FanCoilUnit ;
@@ -67,36 +76,45 @@
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_HHWCoil> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_HtgVlv> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_SupplyFan> ;
-  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.104> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.109> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F4 CHWCoil" ;
   skos:prefLabel "AC F4 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F4 Clg vlv" ;
   skos:prefLabel "AC F4 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F4 HHWCoil" ;
   skos:prefLabel "AC F4 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F4 Htg vlv" ;
   skos:prefLabel "AC F4 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC F4 Supply fan" ;
   skos:prefLabel "AC F4 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5>
   a asset:FanCoilUnit ;
@@ -112,32 +130,41 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F5 CHWCoil" ;
   skos:prefLabel "AC F5 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F5 Clg vlv" ;
   skos:prefLabel "AC F5 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F5 HHWCoil" ;
   skos:prefLabel "AC F5 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F5 Htg vlv" ;
   skos:prefLabel "AC F5 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC F5 Supply fan" ;
   skos:prefLabel "AC F5 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6>
   a asset:FanCoilUnit ;
@@ -153,32 +180,41 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F6 CHWCoil" ;
   skos:prefLabel "AC F6 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F6 Clg vlv" ;
   skos:prefLabel "AC F6 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC F6 HHWCoil" ;
   skos:prefLabel "AC F6 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC F6 Htg vlv" ;
   skos:prefLabel "AC F6 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC F6 Supply fan" ;
   skos:prefLabel "AC F6 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3>
   a asset:FanCoilUnit ;
@@ -194,32 +230,41 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G3 CHWCoil" ;
   skos:prefLabel "AC G3 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G3 Clg vlv" ;
   skos:prefLabel "AC G3 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G3 HHWCoil" ;
   skos:prefLabel "AC G3 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G3 Htg vlv" ;
   skos:prefLabel "AC G3 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC G3 Supply fan" ;
   skos:prefLabel "AC G3 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4>
   a asset:FanCoilUnit ;
@@ -235,32 +280,41 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G4 CHWCoil" ;
   skos:prefLabel "AC G4 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G4 Clg vlv" ;
   skos:prefLabel "AC G4 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G4 HHWCoil" ;
   skos:prefLabel "AC G4 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G4 Htg vlv" ;
   skos:prefLabel "AC G4 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC G4 Supply fan" ;
   skos:prefLabel "AC G4 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5>
   a asset:FanCoilUnit ;
@@ -276,32 +330,41 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G5 CHWCoil" ;
   skos:prefLabel "AC G5 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G5 Clg vlv" ;
   skos:prefLabel "AC G5 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G5 HHWCoil" ;
   skos:prefLabel "AC G5 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G5 Htg vlv" ;
   skos:prefLabel "AC G5 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC G5 Supply fan" ;
   skos:prefLabel "AC G5 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6>
   a asset:FanCoilUnit ;
@@ -317,62 +380,47 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G6 CHWCoil" ;
   skos:prefLabel "AC G6 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G6 Clg vlv" ;
   skos:prefLabel "AC G6 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AC G6 HHWCoil" ;
   skos:prefLabel "AC G6 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AC G6 Htg vlv" ;
   skos:prefLabel "AC G6 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AC G6 Supply fan" ;
   skos:prefLabel "AC G6 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1>
   a asset:AirHandlingUnit ;
   rdfs:label "AHU B1" ;
   skos:prefLabel "AHU B1" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#B1> ;
-  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building307> ;
-.
-<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil>
-  a asset:ElectricalCircuit ;
-  rdfs:label "AHU B1 CHWCoil" ;
-  skos:prefLabel "AHU B1 CHWCoil" ;
-  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
-.
-<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv>
-  a asset:HVACValve ;
-  rdfs:label "AHU B1 Clg vlv" ;
-  skos:prefLabel "AHU B1 Clg vlv" ;
-  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil> ;
-.
-<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter>
-  a asset:AirFilter ;
-  rdfs:label "AHU B1 Filter" ;
-  skos:prefLabel "AHU B1 Filter" ;
-.
-<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil>
-  a asset:ElectricalCircuit ;
-  rdfs:label "AHU B1 HHWCoil" ;
-  skos:prefLabel "AHU B1 HHWCoil" ;
-  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter> ;
@@ -381,27 +429,68 @@
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_OutsideDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_SupplyFan> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil>
+  a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
+  rdfs:label "AHU B1 CHWCoil" ;
+  skos:prefLabel "AHU B1 CHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv>
+  a asset:HVACValve ;
+  rdfs:label "AHU B1 Clg vlv" ;
+  skos:prefLabel "AHU B1 Clg vlv" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter>
+  a asset:AirFilter ;
+  rdfs:label "AHU B1 Filter" ;
+  skos:prefLabel "AHU B1 Filter" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil>
+  a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
+  rdfs:label "AHU B1 HHWCoil" ;
+  skos:prefLabel "AHU B1 HHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_SupplyFan> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU B1 Htg vlv" ;
   skos:prefLabel "AHU B1 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_OutsideDamper>
   a asset:Damper ;
   rdfs:label "AHU B1 Outside damper" ;
   skos:prefLabel "AHU B1 Outside damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ReturnDamper>
   a asset:Damper ;
   rdfs:label "AHU B1 Return damper" ;
   skos:prefLabel "AHU B1 Return damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AHU B1 Supply fan" ;
   skos:prefLabel "AHU B1 Supply fan" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#B1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1>
   a asset:AirHandlingUnit ;
@@ -416,59 +505,69 @@
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_OutsideDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_SupplyFan> ;
-  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building307> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU F1 CHWCoil" ;
   skos:prefLabel "AHU F1 CHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_HHWCoil> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU F1 Clg vlv" ;
   skos:prefLabel "AHU F1 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_Filter>
   a asset:AirFilter ;
   rdfs:label "AHU F1 Filter" ;
   skos:prefLabel "AHU F1 Filter" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU F1 HHWCoil" ;
   skos:prefLabel "AHU F1 HHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_SupplyFan> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HtgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_OutsideDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ReturnDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_SupplyFan> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU F1 Htg vlv" ;
   skos:prefLabel "AHU F1 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_OutsideDamper>
   a asset:Damper ;
   rdfs:label "AHU F1 Outside damper" ;
   skos:prefLabel "AHU F1 Outside damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_ReturnDamper>
   a asset:Damper ;
   rdfs:label "AHU F1 Return damper" ;
   skos:prefLabel "AHU F1 Return damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AHU F1 Supply fan" ;
   skos:prefLabel "AHU F1 Supply fan" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#F1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2>
   a asset:AirHandlingUnit ;
@@ -483,62 +582,179 @@
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_OutsideDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_SupplyFan> ;
-  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building307> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU F2 CHWCoil" ;
   skos:prefLabel "AHU F2 CHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_HHWCoil> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU F2 Clg vlv" ;
   skos:prefLabel "AHU F2 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_Filter>
   a asset:AirFilter ;
   rdfs:label "AHU F2 Filter" ;
   skos:prefLabel "AHU F2 Filter" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU F2 HHWCoil" ;
   skos:prefLabel "AHU F2 HHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_SupplyFan> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HtgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_OutsideDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ReturnDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_SupplyFan> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU F2 Htg vlv" ;
   skos:prefLabel "AHU F2 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_OutsideDamper>
   a asset:Damper ;
   rdfs:label "AHU F2 Outside damper" ;
   skos:prefLabel "AHU F2 Outside damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_ReturnDamper>
   a asset:Damper ;
   rdfs:label "AHU F2 Return damper" ;
   skos:prefLabel "AHU F2 Return damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AHU F2 Supply fan" ;
   skos:prefLabel "AHU F2 Supply fan" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#F2> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1>
   a asset:AirHandlingUnit ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#distinct> true ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "system" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:hasPart ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1> ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "system" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:hasPart ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1> ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ]
+          [
+            <http://spinrdf.org/sp#varName> "feedsComponent" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:hasPart ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1> ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "feedsComponent" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:feeds ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "substance" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "substance" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:substance ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_Filter> ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "type" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "type" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> rdf:type ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1> ;
+          ]
+        ) ;
+    ] ;
   rdfs:label "AHU G1" ;
   skos:prefLabel "AHU G1" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#G1> ;
@@ -550,59 +766,178 @@
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_OutsideDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_SupplyFan> ;
-  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building307> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Enb>
+  a <https://w3id.org/rec/device/OnOffState> ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Enb" ;
+  skos:prefLabel "AHU G1.Hvac Bldg307 Lvl g CEFG1 Enb" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_RmSp>
+  a <https://w3id.org/rec/device/TemperatureSetpoint> ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Rm sp" ;
+  skos:prefLabel "AHU G1.Hvac Bldg307 Lvl g CEFG1 Rm sp" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Sts>
+  a <https://w3id.org/rec/device/OnOffState> ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Sts" ;
+  skos:prefLabel "AHU G1.Hvac Bldg307 Lvl g CEFG1 Sts" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp>
+  a <https://w3id.org/rec/device/TemperatureSensor> ;
+  <http://qudt.org/schema/qudt/quantityKind> <http://qudt.org/vocab/quantitykind/Temperature> ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "device" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+            <http://spinrdf.org/sp#predicate> core:hasCapability ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "device" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "substance" ;
+          ]
+          [
+            <http://spinrdf.org/sp#varName> "quantitykind" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "substance" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:substance ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "quantitykind" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:observes ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "timeseries" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "timeseries" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:timeInterval ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "type" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "type" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> rdf:type ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+          ]
+        ) ;
+    ] ;
+  rdfs:label "AHU G1.Hvac Bldg307 Lvl g CEFG1 Tmp" ;
+  skos:prefLabel "AHU G1.Hvac Bldg307 Lvl g CEFG1 Tmp" ;
+  asset:substance "Air" ;
+  core:observes <http://qudt.org/vocab/quantitykind/Temperature> ;
+  core:timeInterval "air-temperature-stream-XXX" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU G1 CHWCoil" ;
   skos:prefLabel "AHU G1 CHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_HHWCoil> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  asset:substance "SupplyAir" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU G1 Clg vlv" ;
   skos:prefLabel "AHU G1 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_Filter>
   a asset:AirFilter ;
   rdfs:label "AHU G1 Filter" ;
   skos:prefLabel "AHU G1 Filter" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_CHWCoil> ;
+  asset:substance "SupplyAir" ;
+  asset:substance "TransferAir" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU G1 HHWCoil" ;
   skos:prefLabel "AHU G1 HHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_SupplyFan> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HtgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_OutsideDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ReturnDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_SupplyFan> ;
+  asset:substance "SupplyAir" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU G1 Htg vlv" ;
   skos:prefLabel "AHU G1 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_OutsideDamper>
   a asset:Damper ;
   rdfs:label "AHU G1 Outside damper" ;
   skos:prefLabel "AHU G1 Outside damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_Filter> ;
+  asset:substance "OutsideAir" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_ReturnDamper>
   a asset:Damper ;
   rdfs:label "AHU G1 Return damper" ;
   skos:prefLabel "AHU G1 Return damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_Filter> ;
+  asset:substance "ReturnAir" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AHU G1 Supply fan" ;
   skos:prefLabel "AHU G1 Supply fan" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#G1> ;
+  asset:substance "SupplyAir" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2>
   a asset:AirHandlingUnit ;
@@ -617,64 +952,75 @@
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_OutsideDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_SupplyFan> ;
-  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building307> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_307> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU G2 CHWCoil" ;
   skos:prefLabel "AHU G2 CHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_HHWCoil> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU G2 Clg vlv" ;
   skos:prefLabel "AHU G2 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_Filter>
   a asset:AirFilter ;
   rdfs:label "AHU G2 Filter" ;
   skos:prefLabel "AHU G2 Filter" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "AHU G2 HHWCoil" ;
   skos:prefLabel "AHU G2 HHWCoil" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_SupplyFan> ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_CHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_Filter> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HHWCoil> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HtgVlv> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_OutsideDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ReturnDamper> ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_SupplyFan> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "AHU G2 Htg vlv" ;
   skos:prefLabel "AHU G2 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_OutsideDamper>
   a asset:Damper ;
   rdfs:label "AHU G2 Outside damper" ;
   skos:prefLabel "AHU G2 Outside damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_ReturnDamper>
   a asset:Damper ;
   rdfs:label "AHU G2 Return damper" ;
   skos:prefLabel "AHU G2 Return damper" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_Filter> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "AHU G2 Supply fan" ;
   skos:prefLabel "AHU G2 Supply fan" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#G2> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#B1>
   a core:HVACZone ;
   rdfs:label "B1" ;
   skos:prefLabel "B1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.100> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.101> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.102> ;
@@ -711,6 +1057,23 @@
   a building:BasementLevel ;
   rdfs:label "Basement" ;
   skos:prefLabel "Basement" ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.100> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.101> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.102> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.103> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.104> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.105> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.106> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.107> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.108> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.109> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.110> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.111> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.112> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.113> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.114> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.115> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.116> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.100>
   a core:Room ;
@@ -794,31 +1157,221 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.116>
   a building:CableRoom ;
+  a building:UtilitiesRoom ;
   rdfs:label "Basement B.116" ;
   skos:prefLabel "Basement B.116" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1>
+  a asset:Boiler ;
   a asset:HeatExchanger ;
   rdfs:label "Boiler1" ;
   skos:prefLabel "Boiler1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#HHWP1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.116> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building307>
   a core:Building ;
+  rdfs:label "Building307" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_001>
+  a core:Building ;
+  rdfs:label "Building 001" ;
+  skos:prefLabel "Building 001" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_307>
+  a core:SubBuilding ;
   rdfs:label "Building307" ;
   skos:prefLabel "Building307" ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1> ;
 .
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CEFF1>
+  a asset:ExhaustFan ;
+  rdfs:label "CEFF1" ;
+  skos:prefLabel "CEFF1" ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.117a> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.117a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CEFG1>
+  a asset:ExhaustFan ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "equipment" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:isFedBy ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CEFG1> ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:hasPart ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> core:HVACZone ;
+            <http://spinrdf.org/sp#predicate> rdf:type ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:feeds ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "equipment" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "feedlocation" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:isFedBy ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CEFG1> ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "hvaczone" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:isFedBy ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CEFG1> ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "feedlocation" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:hasPart ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> core:HVACZone ;
+            <http://spinrdf.org/sp#predicate> rdf:type ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "hvaczone" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "location" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "location" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:locatedIn ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CEFG1> ;
+          ]
+        ) ;
+    ] ;
+  rdfs:label "CEFG1" ;
+  skos:prefLabel "CEFG1" ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.118a> ;
+  core:hasCapability <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Enb> ;
+  core:hasCapability <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_RmSp> ;
+  core:hasCapability <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Sts> ;
+  core:hasCapability <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+  core:hasCapability <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#EnergyManagementSystem.Hvac_Bldg307_LvlG_CEFG1_MaxDmdEn> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.118a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CHWP1>
+  a asset:Pump ;
+  rdfs:label "CHWP1" ;
+  skos:prefLabel "CHWP1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_ClgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_ClgVlv> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System>
+  a asset:HVACChilledWaterSystem ;
+  rdfs:label "Chilled Water System" ;
+  skos:prefLabel "Chilled Water System" ;
+.
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1>
   a asset:Chiller ;
   rdfs:label "Chiller1" ;
   skos:prefLabel "Chiller1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#CHWP1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.116> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Domestic_Hot_Water_System>
+  a asset:HVACHotWaterSystem ;
+  rdfs:label "Domestic Hot Water System" ;
+  skos:prefLabel "Domestic Hot Water System" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#EnergyManagementSystem.Hvac_Bldg307_LvlG_CEFG1_MaxDmdEn>
+  a <https://w3id.org/rec/device/OperationalNonOperationalState> ;
+  rdfs:label "Energy management system.Hvac Bldg307 Lvl g CEFG1 Max dmd en" ;
+  skos:prefLabel "Energy management system.Hvac Bldg307 Lvl g CEFG1 Max dmd en" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Energy_Management_System>
+  a asset:System ;
+  rdfs:label "Energy Management System" ;
+  skos:prefLabel "Energy Management System" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#F1>
   a core:HVACZone ;
   rdfs:label "F1" ;
   skos:prefLabel "F1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.100> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.101> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.102> ;
@@ -836,6 +1389,7 @@
   a core:HVACZone ;
   rdfs:label "F2" ;
   skos:prefLabel "F2" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.105> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.106> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.107> ;
@@ -891,42 +1445,53 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU B2 CHWCoil" ;
   skos:prefLabel "FCU B2 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU B2 Clg vlv" ;
   skos:prefLabel "FCU B2 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_Filter>
   a asset:AirFilter ;
   rdfs:label "FCU B2 Filter" ;
   skos:prefLabel "FCU B2 Filter" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU B2 HHWCoil" ;
   skos:prefLabel "FCU B2 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU B2 Htg vlv" ;
   skos:prefLabel "FCU B2 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_ReturnDamper>
   a asset:Damper ;
   rdfs:label "FCU B2 Return damper" ;
   skos:prefLabel "FCU B2 Return damper" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "FCU B2 Supply fan" ;
   skos:prefLabel "FCU B2 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3>
   a asset:FanCoilUnit ;
@@ -944,42 +1509,53 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU B3 CHWCoil" ;
   skos:prefLabel "FCU B3 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU B3 Clg vlv" ;
   skos:prefLabel "FCU B3 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_Filter>
   a asset:AirFilter ;
   rdfs:label "FCU B3 Filter" ;
   skos:prefLabel "FCU B3 Filter" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU B3 HHWCoil" ;
   skos:prefLabel "FCU B3 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU B3 Htg vlv" ;
   skos:prefLabel "FCU B3 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_ReturnDamper>
   a asset:Damper ;
   rdfs:label "FCU B3 Return damper" ;
   skos:prefLabel "FCU B3 Return damper" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "FCU B3 Supply fan" ;
   skos:prefLabel "FCU B3 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4>
   a asset:FanCoilUnit ;
@@ -997,42 +1573,53 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU B4 CHWCoil" ;
   skos:prefLabel "FCU B4 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU B4 Clg vlv" ;
   skos:prefLabel "FCU B4 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_Filter>
   a asset:AirFilter ;
   rdfs:label "FCU B4 Filter" ;
   skos:prefLabel "FCU B4 Filter" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU B4 HHWCoil" ;
   skos:prefLabel "FCU B4 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU B4 Htg vlv" ;
   skos:prefLabel "FCU B4 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_ReturnDamper>
   a asset:Damper ;
   rdfs:label "FCU B4 Return damper" ;
   skos:prefLabel "FCU B4 Return damper" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "FCU B4 Supply fan" ;
   skos:prefLabel "FCU B4 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7>
   a asset:FanCoilUnit ;
@@ -1050,42 +1637,53 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU F7 CHWCoil" ;
   skos:prefLabel "FCU F7 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU F7 Clg vlv" ;
   skos:prefLabel "FCU F7 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_Filter>
   a asset:AirFilter ;
   rdfs:label "FCU F7 Filter" ;
   skos:prefLabel "FCU F7 Filter" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU F7 HHWCoil" ;
   skos:prefLabel "FCU F7 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU F7 Htg vlv" ;
   skos:prefLabel "FCU F7 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_ReturnDamper>
   a asset:Damper ;
   rdfs:label "FCU F7 Return damper" ;
   skos:prefLabel "FCU F7 Return damper" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "FCU F7 Supply fan" ;
   skos:prefLabel "FCU F7 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7>
   a asset:FanCoilUnit ;
@@ -1103,47 +1701,61 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_CHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU G7 CHWCoil" ;
   skos:prefLabel "FCU G7 CHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chiller1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_ClgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU G7 Clg vlv" ;
   skos:prefLabel "FCU G7 Clg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_CHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Chilled_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_Filter>
   a asset:AirFilter ;
   rdfs:label "FCU G7 Filter" ;
   skos:prefLabel "FCU G7 Filter" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_HHWCoil>
   a asset:ElectricalCircuit ;
+  a asset:HeatExchanger ;
   rdfs:label "FCU G7 HHWCoil" ;
   skos:prefLabel "FCU G7 HHWCoil" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Boiler1> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_HtgVlv>
   a asset:HVACValve ;
   rdfs:label "FCU G7 Htg vlv" ;
   skos:prefLabel "FCU G7 Htg vlv" ;
   asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_HHWCoil> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_ReturnDamper>
   a asset:Damper ;
   rdfs:label "FCU G7 Return damper" ;
   skos:prefLabel "FCU G7 Return damper" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_SupplyFan>
   a asset:SupplyFan ;
   rdfs:label "FCU G7 Supply fan" ;
   skos:prefLabel "FCU G7 Supply fan" ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#G1>
   a core:HVACZone ;
   rdfs:label "G1" ;
   skos:prefLabel "G1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_ReturnDamper> ;
+  asset:substance "ReturnAir" ;
+  asset:substance "SupplyAir" ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.100> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.101> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.102> ;
@@ -1160,7 +1772,7 @@
   a core:HVACZone ;
   rdfs:label "G2" ;
   skos:prefLabel "G2" ;
-  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.106> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_ReturnDamper> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.105> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.106> ;
   core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.107> ;
@@ -1207,6 +1819,33 @@
   a building:MezzanineLevel ;
   rdfs:label "Ground" ;
   skos:prefLabel "Ground" ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.100> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.101> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.102> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.103> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.104> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.105> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.106> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.107> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.108> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.109> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.110> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.111> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.112> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.112a> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.113> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.114> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.115> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.116> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.117> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.118> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.118a> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.119> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.120> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.121> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.122> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.123> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.124> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.100>
   a building:Hallway ;
@@ -1285,21 +1924,25 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.114>
   a building:RestingRoom ;
+  a building:Toilet ;
   rdfs:label "Ground G.114" ;
   skos:prefLabel "Ground G.114" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.115>
   a building:RestingRoom ;
+  a building:Toilet ;
   rdfs:label "Ground G.115" ;
   skos:prefLabel "Ground G.115" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.116>
   a building:RestingRoom ;
+  a building:Toilet ;
   rdfs:label "Ground G.116" ;
   skos:prefLabel "Ground G.116" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.117>
   a building:SecurityRoom ;
+  a building:UtilitiesRoom ;
   rdfs:label "Ground G.117" ;
   skos:prefLabel "Ground G.117" ;
 .
@@ -1310,6 +1953,7 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.118a>
   a building:Cabinet ;
+  a building:CableRoom ;
   rdfs:label "Ground G.118a" ;
   skos:prefLabel "Ground G.118a" ;
 .
@@ -1343,10 +1987,200 @@
   rdfs:label "Ground G.124" ;
   skos:prefLabel "Ground G.124" ;
 .
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#HHWP1>
+  a asset:Pump ;
+  rdfs:label "HHWP1" ;
+  skos:prefLabel "HHWP1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F3_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F4_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F5_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_F6_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G3_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G4_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G5_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AC_G6_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_B1_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F1_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_F2_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G2_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B2_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B3_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_B4_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_F7_HtgVlv> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#FCU_G7_HtgVlv> ;
+  core:isPartOf <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System>
+  a asset:HVACHotWaterSystem ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#distinct> true ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#distinct> true ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "system" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "system" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+          [
+            a <http://spinrdf.org/sp#Filter> ;
+            <http://spinrdf.org/sp#expression> [
+                a <http://spinrdf.org/sp#ne> ;
+                <http://spinrdf.org/sp#arg1> [
+                    <http://spinrdf.org/sp#varName> "system" ;
+                  ] ;
+                <http://spinrdf.org/sp#arg2> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> core:hasPart ;
+            <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1> ;
+          ]
+        ) ;
+    ] ;
+  <http://spinrdf.org/spin#query> [
+      a <http://spinrdf.org/sp#Select> ;
+      <http://spinrdf.org/sp#resultVariables> (
+          [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ]
+          [
+            <http://spinrdf.org/sp#varName> "feedsComponent" ;
+          ]
+        ) ;
+      <http://spinrdf.org/sp#where> (
+          [
+            <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+            <http://spinrdf.org/sp#predicate> core:isPartOf ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+          [
+            <http://spinrdf.org/sp#object> [
+                <http://spinrdf.org/sp#varName> "feedsComponent" ;
+              ] ;
+            <http://spinrdf.org/sp#predicate> asset:feeds ;
+            <http://spinrdf.org/sp#subject> [
+                <http://spinrdf.org/sp#varName> "component" ;
+              ] ;
+          ]
+        ) ;
+    ] ;
+  rdfs:label "Heating Hot Water System" ;
+  skos:prefLabel "Heating Hot Water System" ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#KefB1>
+  a asset:ExhaustFan ;
+  rdfs:label "Kef b1" ;
+  skos:prefLabel "Kef b1" ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.112a> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.112a> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#KefR1>
+  a asset:ExhaustFan ;
+  rdfs:label "Kef r1" ;
+  skos:prefLabel "Kef r1" ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.112a> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.112a> ;
+.
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1>
   a building:RoofLevel ;
   rdfs:label "Level1" ;
   skos:prefLabel "Level1" ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.100> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.101> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.102> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.103> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.104> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.105> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.106> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.107> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.108> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.109> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.110> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.111> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.112> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.113> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.114> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.115> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.116> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.117> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.117a> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.118> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.119> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.120> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.121> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.122> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.123> ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.100>
   a building:Hallway ;
@@ -1420,16 +2254,19 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.114>
   a building:RestingRoom ;
+  a building:Toilet ;
   rdfs:label "Level1 1.114" ;
   skos:prefLabel "Level1 1.114" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.115>
   a building:RestingRoom ;
+  a building:Toilet ;
   rdfs:label "Level1 1.115" ;
   skos:prefLabel "Level1 1.115" ;
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.116>
   a building:RestingRoom ;
+  a building:Toilet ;
   rdfs:label "Level1 1.116" ;
   skos:prefLabel "Level1 1.116" ;
 .
@@ -1440,6 +2277,7 @@
 .
 <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.117a>
   a building:Cabinet ;
+  a building:CableRoom ;
   rdfs:label "Level1 1.117a" ;
   skos:prefLabel "Level1 1.117a" ;
 .
@@ -1473,3 +2311,165 @@
   rdfs:label "Level1 1.123" ;
   skos:prefLabel "Level1 1.123" ;
 .
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#OafF1>
+  a asset:TransferFan ;
+  rdfs:label "Oaf f1" ;
+  skos:prefLabel "Oaf f1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.104> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.109> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#OafF2>
+  a asset:TransferFan ;
+  rdfs:label "Oaf f2" ;
+  skos:prefLabel "Oaf f2" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.118> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.123> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.118> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#OafG1>
+  a asset:TransferFan ;
+  rdfs:label "Oaf g1" ;
+  skos:prefLabel "Oaf g1" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.104> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.111> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.104> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#OafG2>
+  a asset:TransferFan ;
+  rdfs:label "Oaf g2" ;
+  skos:prefLabel "Oaf g2" ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.119> ;
+  asset:feeds <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.124> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.119> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Site_6040>
+  a core:Land ;
+  rdfs:label "CSIRO Clayton" ;
+  skos:prefLabel "CSIRO Clayton" ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_001> ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Building_307> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#South_East_Precinct>
+  a core:Region ;
+  rdfs:label "South East Precinct" ;
+  skos:prefLabel "South East Precinct" ;
+  core:hasPart <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Site_6040> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#TefR1>
+  a asset:ExhaustFan ;
+  rdfs:label "Tef r1" ;
+  skos:prefLabel "Tef r1" ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.109> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.110> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.111> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.112> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.114> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.115> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ground_G.116> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.114> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.115> ;
+  asset:isFedBy <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Level1_1.116> ;
+  core:locatedIn <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Basement_B.109> ;
+.
+<http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System>
+  a asset:HVACTransferAirSystem ;
+  rdfs:label "Ventilation Air System" ;
+  skos:prefLabel "Ventilation Air System" ;
+.
+[
+  a <http://spinrdf.org/sp#Select> ;
+  <http://spinrdf.org/sp#distinct> true ;
+  <http://spinrdf.org/sp#resultVariables> (
+      [
+        <http://spinrdf.org/sp#varName> "component" ;
+      ]
+    ) ;
+  <http://spinrdf.org/sp#where> (
+      [
+        <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Heating_Hot_Water_System> ;
+        <http://spinrdf.org/sp#predicate> core:isPartOf ;
+        <http://spinrdf.org/sp#subject> [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ] ;
+      ]
+      [
+        <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#Ventilation_Air_System> ;
+        <http://spinrdf.org/sp#predicate> core:isPartOf ;
+        <http://spinrdf.org/sp#subject> [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ] ;
+      ]
+    ) ;
+].
+[
+  a <http://spinrdf.org/sp#Select> ;
+  <http://spinrdf.org/sp#distinct> true ;
+  <http://spinrdf.org/sp#resultVariables> (
+      [
+        <http://spinrdf.org/sp#varName> "system" ;
+      ]
+    ) ;
+  <http://spinrdf.org/sp#where> (
+      [
+        <http://spinrdf.org/sp#object> [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ] ;
+        <http://spinrdf.org/sp#predicate> core:hasPart ;
+        <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1> ;
+      ]
+      [
+        <http://spinrdf.org/sp#object> [
+            <http://spinrdf.org/sp#varName> "system" ;
+          ] ;
+        <http://spinrdf.org/sp#predicate> core:isPartOf ;
+        <http://spinrdf.org/sp#subject> [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ] ;
+      ]
+    ) ;
+].
+[
+  a <http://spinrdf.org/sp#Select> ;
+  <http://spinrdf.org/sp#distinct> true ;
+  <http://spinrdf.org/sp#resultVariables> (
+      [
+        <http://spinrdf.org/sp#varName> "system" ;
+      ]
+    ) ;
+  <http://spinrdf.org/sp#where> (
+      [
+        <http://spinrdf.org/sp#object> [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ] ;
+        <http://spinrdf.org/sp#predicate> core:hasPart ;
+        <http://spinrdf.org/sp#subject> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1> ;
+      ]
+      [
+        <http://spinrdf.org/sp#object> [
+            <http://spinrdf.org/sp#varName> "system" ;
+          ] ;
+        <http://spinrdf.org/sp#predicate> core:isPartOf ;
+        <http://spinrdf.org/sp#subject> [
+            <http://spinrdf.org/sp#varName> "component" ;
+          ] ;
+      ]
+    ) ;
+].
+[
+  a <http://spinrdf.org/sp#Select> ;
+  <http://spinrdf.org/sp#resultVariables> (
+      [
+        <http://spinrdf.org/sp#varName> "device" ;
+      ]
+    ) ;
+  <http://spinrdf.org/sp#where> (
+      [
+        <http://spinrdf.org/sp#object> <http://design-pattern-instance-only.qzc438.com/RealEstateCore/C_B307_RECore#AHU_G1.Hvac_Bldg307_LvlG_CEFG1_Tmp> ;
+        <http://spinrdf.org/sp#predicate> core:hasCapability ;
+        <http://spinrdf.org/sp#subject> [
+            <http://spinrdf.org/sp#varName> "device" ;
+          ] ;
+      ]
+    ) ;
+].
